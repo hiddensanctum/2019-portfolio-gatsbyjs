@@ -1,11 +1,11 @@
 // Colors
-$jlchuang-pale-color:         #F2F2F2;
-$jlchuang-pale-alt-color:     #FFFFFF;
+$jlchuang-pale-color:         #FFFFFF;
+$jlchuang-pale-alt-color:     #EFEFEF;
 $jlchuang-dark-color:         #0D0D0D;
-$jlchuang-dark-alt-color:     #2C343B;
-$jlchuang-accent-color:       #418FBF;
-$jlchuang-accent-pale-color:  #99D0F2;
-$jlchuang-accent-dark-color:  #176FA6;
+$jlchuang-dark-alt-color:     #222226;
+$jlchuang-accent-color:       #efb697;
+$jlchuang-accent-pale-color:  lighten( $jlchuang-accent-color, 10% );
+$jlchuang-accent-dark-color:  darken( $jlchuang-accent-color, 10% );
 
 // Layout
 $universal-padding:           10px;

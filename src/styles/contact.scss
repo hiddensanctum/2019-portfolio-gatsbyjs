@@ -26,23 +26,18 @@
       justify-content: center;
       width: 40%;
       align-items: center;
-      .email-icon {
-        color: #669c41;
-      }
-      .linkedin-icon {
-        color: #0173b2;
-      }
-      .github-icon {
-        color: $jlchuang-pale-color;
-      }
-      .email-icon,
-      .linkedin-icon,
-      .github-icon {
+      .email-link,
+      .linkedin-link,
+      .github-link {
         text-decoration: none;
         box-shadow: none;
+        color: $jlchuang-accent-color;
+        &:hover, &:focus {
+          color: $jlchuang-pale-color;
+        }
       }
       svg {
-        font-size: 80px;
+        font-size: 50px;
         padding: $universal-padding * 2;
       }
     }

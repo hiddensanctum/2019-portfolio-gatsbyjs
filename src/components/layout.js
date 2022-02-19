@@ -7,7 +7,7 @@ import '../styles/layout.scss';
 const Layout = ({ title, children }) => (
   <div className='layout'>
     <Helmet>
-      <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:100,400&display=swap' rel='stylesheet' />
+      <link href='https://fonts.googleapis.com/css2?family=Cardo&family=Josefin+Sans:wght@100;400&display=swap' rel='stylesheet' />
     </Helmet>
     <Header
       title={title}

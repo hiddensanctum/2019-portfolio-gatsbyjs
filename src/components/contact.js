@@ -14,24 +14,27 @@ const Contact = () => (
       </div>
       <div className='contact-icons'>
         <a
+          aria-label="Linkedin Page"
           href='https://www.linkedin.com/in/jlchuang/'
-          className='linkedin-icon'
+          className='linkedin-link'
           target='_blank'
           rel='noopener noreferrer'
         >
           <FontAwesomeIcon icon={faLinkedinIn} />
         </a>
         <a
+          aria-label="Github Page"
           href='https://github.com/hiddensanctum'
-          className='github-icon'
+          className='github-link'
           target='_blank'
           rel='noopener noreferrer'
         >
           <FontAwesomeIcon icon={faGithubAlt} className='github-icon' />
         </a>
         <a
+          aria-label="hello@jlchuang.com Email Link"
           href='mailto:hello@jlchuang.com'
-          className='email-icon'
+          className='email-link'
           target='_blank'
           rel='noopener noreferrer'
         >

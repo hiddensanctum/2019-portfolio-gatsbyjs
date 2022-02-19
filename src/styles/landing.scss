@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 .landing-section {
   background: url(./landing-background.jpg);
   background-size: cover;
@@ -39,6 +41,14 @@
           font-weight: 100;
         }
       }
+    }
+    .intro {
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    .subtitle {
+      line-height: 1.5px;
+      font-weight: 200;
+      color: $jlchuang-accent-color;
     }
   }
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
