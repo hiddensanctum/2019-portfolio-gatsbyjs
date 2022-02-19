@@ -44,7 +44,7 @@
       padding-left: 0;
       svg {
         height: auto;
-        width: calc(33.33% - #{$universal-padding * 2});
+        max-width: 80px;
         padding: $universal-padding;
       }
     }
