@@ -1,8 +1,8 @@
-import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons'
-import Skills from './skills';
-import "../styles/about.scss"
+import Skills from './skills'
+import '../styles/about.scss'
 
 const About = () => {
   return (
@@ -16,7 +16,7 @@ const About = () => {
           <h3>I am a Senior Software Engineer in Seattle, Washington</h3>
           <p>Studied at Code Fellows RoR Track and UMCP Bachelors of Science in Psychology, I predominately focus on Front End Stacks tackling issues of Accessibility, Design Systems, and User Experiences.</p>
         </div>
-        <div className="skill-section">
+        <div className='skill-section'>
           <Skills />
         </div>
       </div>
