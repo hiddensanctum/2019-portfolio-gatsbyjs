@@ -13,3 +13,21 @@ $universal-margin:            20px;
 
 // Mobile
 $universal-mobile-padding:    20px;
+
+// TODO: update these to css variables
+
+:root {
+  --header-height: 64px;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+@mixin section-box {
+  @include flex-center;
+  max-width: 1000px;
+  padding: var(--header-height) 30px 30px 30px;
+}
