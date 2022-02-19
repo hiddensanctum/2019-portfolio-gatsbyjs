@@ -1,13 +1,13 @@
-import React, { useState } from "react"
-import { Link } from "gatsby"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import "../styles/navbar.scss"
+import React, { useState } from 'react';
+import { Link } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import '../styles/navbar.scss';
 
 const Navbar = () => {
   const [MobileNav, toggleMobileNav] = useState(false);
 
-  const navBarContent = (device) => device === "navbar-mobile" ? (
+  const navBarContent = (device) => device === 'navbar-mobile' ? (
     <ul className={device}>
       <li><Link to={`/`} onClick={() => toggleMobileNav(!MobileNav)}>Home</Link></li>
       <li><Link to={`#about`} onClick={() => toggleMobileNav(!MobileNav)}>About</Link></li>
@@ -28,16 +28,16 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="navbar">
-      <button 
+    <nav className='navbar'>
+      <button
         className={`mobile-nav ${MobileNav ? 'active' : ''}`}
         onClick={() => toggleMobileNav(!MobileNav)}>
-        <FontAwesomeIcon icon={MobileNav ? faTimes : faBars}  />
+        <FontAwesomeIcon icon={MobileNav ? faTimes : faBars} />
       </button>
-      {MobileNav ? navBarContent("navbar-mobile") : null}
-      {navBarContent("navbar-laptop")}
+      {MobileNav ? navBarContent('navbar-mobile') : null}
+      {navBarContent('navbar-laptop')}
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
