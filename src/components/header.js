@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import Image from 'gatsby-image';
 import NavBar from './navbar';
@@ -18,8 +18,11 @@ const Header = () => {
       }
     }
   `);
+
+  const [ExpandedState, toggleExpandedState] = useState(false);
+
   return (
-    <header className='header'>
+    <header className={`header ${ExpandedState ? 'expanded' : ''}`}>
       <Link to={'/'}>
         <Image
           fixed={data.logo.childImageSharp.fixed}
@@ -27,7 +30,7 @@ const Header = () => {
           className='jlchuang-logo'
         />
       </Link>
-      <NavBar />
+      <NavBar onChange={toggleExpandedState} />
     </header>
   );
 };
