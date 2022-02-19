@@ -41,7 +41,7 @@ const Journal = () => (
       const posts = data.allMarkdownRemark.edges;
 
       return (
-        <div className='journal-viewport' name='journal'>
+        <div className='journal-viewport' name='journal' id='journal'>
           <div className='journal-layout'>
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug;

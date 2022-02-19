@@ -4,7 +4,7 @@ import { faSuitcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import '../styles/experience.scss';
 
 const Experience = () => (
-  <div className='experience-section' name='experience'>
+  <div className='experience-section' name='experience' id='experience'>
     <div className='experience-layout'>
       <div className='experience'>
         <h2>

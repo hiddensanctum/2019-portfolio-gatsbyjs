@@ -5,7 +5,7 @@ import Skills from './skills';
 import '../styles/about.scss';
 
 const About = () => (
-  <div className='about-viewport' name='about'>
+  <div className='about-viewport' name='about' id='about'>
     <div className='about-layout'>
       <div className='about-section'>
         <div className='profile-section'>

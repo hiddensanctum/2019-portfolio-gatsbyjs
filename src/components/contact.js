@@ -5,7 +5,7 @@ import { faLinkedinIn, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 import '../styles/contact.scss';
 
 const Contact = () => (
-  <div className='contact-section' name='contact'>
+  <div className='contact-section' name='contact' id='contact'>
     <div className='contact-layout'>
       <div className='contact-narrative'>
         <h2>Contact Me</h2>
