@@ -5,6 +5,7 @@ body {
   background: $jlchuang-dark-color;
   height: 100%;
   width: 100%;
+  margin: 0px;
   font-size: 16px;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 0.5px;
@@ -23,7 +24,6 @@ body {
     box-shadow: none;
     &:hover, &:active {
       color: $jlchuang-accent-dark-color;
-      box-shadow: 0 1px 0 0 currentColor;
     }
   }
 }

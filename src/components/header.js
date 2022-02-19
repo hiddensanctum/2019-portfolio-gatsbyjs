@@ -24,6 +24,7 @@ const Header = () => {
         <Image
           fixed={data.logo.childImageSharp.fixed}
           alt={"mindfulgadgets logo"}
+          className="mindfulgadgets-logo"
         />
       </Link>
       <NavBar />
