@@ -11,14 +11,14 @@ import SEO from '../components/seo';
 import '../styles/blogpost.scss';
 
 
-const BlogPostTemplate = ({ data, pageContext }) => {
+const BlogPostTemplate = ({ data, location, pageContext }) => {
   const post = data.allMdx.edges[0].node;
   const siteTitle = data.site.siteMetadata.title;
   const featuredImageSrc = post.frontmatter.featuredImage.childImageSharp.fluid.src;
   const { previous, next } = pageContext;
 
   return (
-    <Layout location={this.props.location} title={siteTitle}>
+    <Layout location={location} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
