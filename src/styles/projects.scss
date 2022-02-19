@@ -30,6 +30,16 @@
       &:last-child {
         margin-right: 0;
       }
+      a {
+        &:hover, &:focus {
+          .project-image {
+            opacity: 100%;
+          }
+          h3 {
+            color: $jlchuang-pale-color;
+          }
+        }
+      }
     }
     .project-technologies {
       display: flex;
@@ -43,6 +53,7 @@
   .project-image {
     width: 100%;
     height: 250px;
+    opacity: 80%;
   }
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     position: relative;
