@@ -27,15 +27,21 @@
           margin-top: 10px;
           margin-bottom: 10px;
         }
+        h3 {
+          color: $jlchuang-accent-dark-color;
+        }
+        h4 {
+          color: $jlchuang-accent-pale-color;
+        }
       }  
     }
     .experience {
-      padding-right: 10px;
-      width: 70%;
+      padding-right: 20px;
+      width: 65%;
     }
     .education {
-      padding-left: 10px;
-      width: 30%;
+      padding-left: 20px;
+      width: 35%;
     }
   }
 }
