@@ -23,8 +23,8 @@ const Header = () => {
       <Link to={'/'}>
         <Image
           fixed={data.logo.childImageSharp.fixed}
-          alt={'mindfulgadgets logo'}
-          className='mindfulgadgets-logo'
+          alt={'jlchuang logo'}
+          className='jlchuang-logo'
         />
       </Link>
       <NavBar />
