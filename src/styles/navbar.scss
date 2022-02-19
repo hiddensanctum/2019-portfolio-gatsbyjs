@@ -67,8 +67,8 @@ nav {
         a {
           display: block;
           color: $jlchuang-pale-color;
-          padding: $universal-padding;
-          font-size: 15px;
+          padding: $universal-padding * 2 $universal-padding;
+          font-size: 17px;
           &:hover, &:active {
             box-shadow: none;
           }
