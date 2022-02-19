@@ -43,32 +43,34 @@ const Journal = () => (
       return (
         <div className='journal-viewport' name='journal' id='journal'>
           <div className='journal-layout'>
-            {posts.map(({ node }) => {
-              const title = node.frontmatter.title || node.fields.slug;
-              return (
-                <article key={node.fields.slug}>
-                  <header>
-                    <Image
-                      fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
-                      className='featured-blog-image'
-                    />
-                    <h2>
-                      <Link to={node.fields.slug}>
-                        {title}
-                      </Link>
-                    </h2>
-                    <small>{node.frontmatter.date}</small>
-                  </header>
-                  <section>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: node.frontmatter.description || node.excerpt,
-                      }}
-                    />
-                  </section>
-                </article>
-              );
-            })}
+            <div data-aos='fade-down'>
+              {posts.map(({ node }) => {
+                const title = node.frontmatter.title || node.fields.slug;
+                return (
+                  <article key={node.fields.slug}>
+                    <header>
+                      <Image
+                        fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
+                        className='featured-blog-image'
+                      />
+                      <h2>
+                        <Link to={node.fields.slug}>
+                          {title}
+                        </Link>
+                      </h2>
+                      <small>{node.frontmatter.date}</small>
+                    </header>
+                    <section>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: node.frontmatter.description || node.excerpt,
+                        }}
+                      />
+                    </section>
+                  </article>
+                );
+              })}
+            </div>
           </div>
         </div>
       );

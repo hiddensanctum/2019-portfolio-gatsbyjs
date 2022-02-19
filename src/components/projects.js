@@ -8,7 +8,7 @@ import '../styles/projects.scss';
 const Projects = () => (
   <div className='projects-viewport' name='projects' id='projects'>
     <div className='projects-layout'>
-      <div className='projects-section'>
+      <div className='projects-section' data-aos='fade-down'>
         <h2><FontAwesomeIcon icon={faDesktop} /> Projects</h2>
         <div className='projects-list'>
           <div className='project-card'>

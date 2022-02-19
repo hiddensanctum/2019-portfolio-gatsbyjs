@@ -7,7 +7,7 @@ import '../styles/about.scss';
 const About = () => (
   <div className='about-viewport' name='about' id='about'>
     <div className='about-layout'>
-      <div className='about-section'>
+      <div className='about-section' data-aos='fade-down'>
         <div className='profile-section'>
           <FontAwesomeIcon icon={faUserCircle} className='profile-icon' />
         </div>
@@ -17,7 +17,7 @@ const About = () => (
           I predominately focus on Front End Stacks tackling issues of Accessibility, D
           esign Systems, and User Experiences.</p>
       </div>
-      <div className='skill-section'>
+      <div className='skill-section' data-aos='fade-down'>
         <Skills />
       </div>
     </div>

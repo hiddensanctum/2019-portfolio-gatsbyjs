@@ -6,7 +6,7 @@ import '../styles/experience.scss';
 const Experience = () => (
   <div className='experience-section' name='experience' id='experience'>
     <div className='experience-layout'>
-      <div className='experience'>
+      <div className='experience' data-aos='fade-down'>
         <h2>
           <FontAwesomeIcon icon={faSuitcase} /> Experience
         </h2>
@@ -36,7 +36,7 @@ const Experience = () => (
             volunterrs do data entry and track the feral cat population.</p>
         </div>
       </div>
-      <div className='education'>
+      <div className='education' data-aos='fade-down'>
         <h2>
           <FontAwesomeIcon icon={faGraduationCap} /> Education
         </h2>

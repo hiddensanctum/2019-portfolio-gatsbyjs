@@ -7,12 +7,12 @@ import '../styles/contact.scss';
 const Contact = () => (
   <div className='contact-section' name='contact' id='contact'>
     <div className='contact-layout'>
-      <div className='contact-narrative'>
+      <div className='contact-narrative' data-aos='fade-down'>
         <h2>Contact Me</h2>
         <p>I am always interested in hearing about new ideas and opportunities.
           Feel free to contact me through the various means on the right.</p>
       </div>
-      <div className='contact-icons'>
+      <div className='contact-icons' data-aos='fade-down'>
         <a
           aria-label="Linkedin Page"
           href='https://www.linkedin.com/in/jlchuang/'

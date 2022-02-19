@@ -29,7 +29,7 @@ const Landing = () => (
         <div className='landing-layout'>
           <a href='#about' className='anchor'>
             <div>
-              <h1 className='intro'>James Chuang</h1>
+              <h1 className='intro' data-aos='fade-down'>James Chuang</h1>
               <p className='subtitle'>Senior Software Engineer | Seattle, Washington</p>
             </div>
           </a>
