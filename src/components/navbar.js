@@ -7,25 +7,25 @@ import '../styles/navbar.scss';
 const Navbar = () => {
   const [MobileNav, toggleMobileNav] = useState(false);
 
-  const navBarContent = (device) => device === 'navbar-mobile' ? (
+  const navBarContent = (device) => (device === 'navbar-mobile' ? (
     <ul className={device}>
-      <li><Link to={`/`} onClick={() => toggleMobileNav(!MobileNav)}>Home</Link></li>
-      <li><Link to={`#about`} onClick={() => toggleMobileNav(!MobileNav)}>About</Link></li>
-      <li><Link to={`#experience`} onClick={() => toggleMobileNav(!MobileNav)}>Experience</Link></li>
-      <li><Link to={`#projects`} onClick={() => toggleMobileNav(!MobileNav)}>Projects</Link></li>
-      <li><Link to={`#journal`} onClick={() => toggleMobileNav(!MobileNav)}>Journal</Link></li>
-      <li><Link to={`#contact`} onClick={() => toggleMobileNav(!MobileNav)}>Contact</Link></li>
+      <li><Link to={'/'} onClick={() => toggleMobileNav(!MobileNav)}>Home</Link></li>
+      <li><Link to={'#about'} onClick={() => toggleMobileNav(!MobileNav)}>About</Link></li>
+      <li><Link to={'#experience'} onClick={() => toggleMobileNav(!MobileNav)}>Experience</Link></li>
+      <li><Link to={'#projects'} onClick={() => toggleMobileNav(!MobileNav)}>Projects</Link></li>
+      <li><Link to={'#journal'} onClick={() => toggleMobileNav(!MobileNav)}>Journal</Link></li>
+      <li><Link to={'#contact'} onClick={() => toggleMobileNav(!MobileNav)}>Contact</Link></li>
     </ul>
   ) : (
     <ul className={device}>
-      <li><Link to={`/`}>Home</Link></li>
-      <li><Link to={`#about`}>About</Link></li>
-      <li><Link to={`#experience`}>Experience</Link></li>
-      <li><Link to={`#projects`}>Projects</Link></li>
-      <li><Link to={`#journal`}>Journal</Link></li>
-      <li><Link to={`#contact`}>Contact</Link></li>
+      <li><Link to={'/'}>Home</Link></li>
+      <li><Link to={'#about'}>About</Link></li>
+      <li><Link to={'#experience'}>Experience</Link></li>
+      <li><Link to={'#projects'}>Projects</Link></li>
+      <li><Link to={'#journal'}>Journal</Link></li>
+      <li><Link to={'#contact'}>Contact</Link></li>
     </ul>
-  );
+  ));
 
   return (
     <nav className='navbar'>
