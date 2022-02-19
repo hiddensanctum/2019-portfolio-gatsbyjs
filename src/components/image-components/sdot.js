@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import Image from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const SdotImage = () => (
   <StaticQuery
@@ -9,26 +9,25 @@ const SdotImage = () => (
         allImageSharp(filter: {fluid: {originalName: {eq: "SDOT.png"}}}) {
           edges {
             node {
-              fluid {
-                base64
-                tracedSVG
-                srcWebp
-                srcSetWebp
-                originalImg
-                originalName
-                presentationWidth
-                presentationHeight
-              }
+              gatsbyImageData(
+                width: 600
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+              )
             }
           }
         }
       }
     `}
     render={(data) => {
-      const photo = data.allImageSharp.edges[0].node.fluid;
+      const image = getImage(data.allImageSharp.edges[0].node);
       return (
         <div>
-          <Image fluid={photo} className='project-image'/>
+          <GatsbyImage 
+            image={image} 
+            className='project-image'
+            alt='Seattle Department of Transportation Website Screenshot'
+          />
         </div>
       );
     }}

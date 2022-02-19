@@ -1,6 +1,8 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { convertToBgImage } from 'gbimage-bridge'
 import '../styles/landing.scss';
 
 const Landing = () => (
@@ -10,21 +12,26 @@ const Landing = () => (
     query {
       desktop: file(relativePath: { eq: "landing-background.jpg" }) {
         childImageSharp {
-          fluid(quality: 85, maxWidth: 1280) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(
+            width: 2048
+            quality: 85
+            layout: FULL_WIDTH
+            formats: [AUTO, WEBP, AVIF]
+          )
         }
       }
     }
   `}
   render={data => {
-    const imageData = data.desktop.childImageSharp.fluid
+    const image = getImage(data.desktop);
+    const bgImage = convertToBgImage(image);
+
     return (
       <BackgroundImage
         Tag="section"
         className='landing-section'
-        fluid={imageData}
-      >
+        {...bgImage}
+      > 
         <div className='landing-layout'>
           <a href='#about' className='anchor'>
             <div>

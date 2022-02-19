@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
-import Image from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import NavBar from './navbar';
 import '../styles/header.scss';
 
@@ -11,21 +11,24 @@ const Header = () => {
       logo: file(absolutePath: {regex: "/logo.png/"}) {
         id
         childImageSharp {
-          fixed(height: 40, width: 40) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(
+            width: 40
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
         }
       }
     }
   `);
 
   const [ExpandedState, toggleExpandedState] = useState(false);
+  const image = getImage(data.logo)
 
   return (
     <header className={`header ${ExpandedState ? 'expanded' : ''}`}>
       <Link to={'/'}>
-        <Image
-          fixed={data.logo.childImageSharp.fixed}
+        <GatsbyImage
+          image={image}
           alt={'jlchuang logo'}
           className='jlchuang-logo'
         />
