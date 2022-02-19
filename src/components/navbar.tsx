@@ -41,6 +41,7 @@ const Navbar:FunctionComponent<Props> = ({ onChange }) => {
   return (
     <nav className='navbar'>
       <button
+        aria-label='mobile navigation'
         className={`mobile-nav ${MobileNav ? 'active' : ''}`}
         onClick={() => toggleMobileNav(!MobileNav)}>
         <FontAwesomeIcon icon={MobileNav ? faTimes : faBars} />
