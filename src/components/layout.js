@@ -1,11 +1,9 @@
-import AOS from 'aos';
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Header from './header';
 import '../styles/layout.scss';
 
-AOS.init();
 const Layout = ({ title, children }) => (
   <div className='layout'>
     <Helmet>
@@ -16,6 +14,9 @@ const Layout = ({ title, children }) => (
       title={title}
     />
     <main>{children}</main>
+    <script>
+      AOS.init();
+    </script>
   </div>
 );
 

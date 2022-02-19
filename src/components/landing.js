@@ -5,7 +5,6 @@ import '../styles/landing.scss';
 
 const Landing = () => (
 
-
 <StaticQuery
   query={graphql`
     query {
