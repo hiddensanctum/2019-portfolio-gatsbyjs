@@ -11,10 +11,17 @@ const Experience:FunctionComponent = () => (
           <FontAwesomeIcon icon={faSuitcase} /> Experience
         </h2>
         <div className='experience-block'>
-          <span>May 2018 - Present</span>
+          <span>Aug 2021 - Present</span>
+          <h3>Tyler Technologies</h3>
+          <h4>Software Team Lead</h4>
+          <p>50% of my time as a technical manager for 3 direct reports. The other 50% as a lead software engineer. My day to day involves planning out projects, creating <strong>technical design docs</strong>, implementing features, growing/mentoring teammates, and managing my direct reports.</p>
+          <p></p>
+        </div>
+        <div className='experience-block'>
+          <span>May 2018 - Aug 2021</span>
           <h3>Tyler Technologies</h3>
           <h4>Senior Software Engineer</h4>
-          <p>Currently, I work as a Senior Software Engineer at the Data Insights Division of Tyler Technologies. I develop Performance KPI software that enables data analysis for governments to make data-based decisions for their public policies.</p>
+          <p>Worked as a Senior Software Engineer at the Data Insights Division of Tyler Technologies. I develop Performance KPI software that enables data analysis for governments to make data-based decisions for their public policies.</p>
         </div>
         <div className='experience-block'>
           <span>Apr 2014 - May 2018</span>

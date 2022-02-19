@@ -13,6 +13,7 @@
       justify-content: center;
       text-align: center;
       div {
+        padding: var(--header-height) 30px 30px 30px;
         h1 {
           border-bottom: 1px dotted white;
           padding: 10px;
@@ -37,8 +38,8 @@
     }
   }
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+    // position: relative;
+    // width: 100%;
+    // overflow: hidden;
   }
 }

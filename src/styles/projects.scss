@@ -15,11 +15,9 @@
       display: flex;
     }
     .project-card {
-      margin-top: $universal-margin;
-      width: 50%;
-      margin-right: $universal-margin * 2;
+      padding-right: $universal-margin;
       &:last-child {
-        margin-right: 0;
+        padding-right: 0;
       }
       a {
         &:hover, &:focus {
@@ -47,25 +45,13 @@
     opacity: .8;
   }
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    position: relative;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
     .projects-layout {
-      display: block;
-      height: 100%;
-      transform: none;
-      position: relative;
-      padding: $universal-padding * 2;
-      margin: calc(60px - #{$universal-padding}) 0;
-      width: calc(100% - #{$universal-padding * 4});
-      top: 0;
-      left: 0;
+      @include mobile-layout;
       .projects-list {
-        display: block;
+        flex-direction: column;
       }
       .project-card {
-        width: 100%;
+        padding-right: 0;
       }
     }
   }

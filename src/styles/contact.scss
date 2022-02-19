@@ -38,28 +38,14 @@
     }
   }
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    position: relative;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
     .contact-layout {
-      display: block;
-      height: 100%;
-      transform: none;
-      position: relative;
-      padding: $universal-padding * 2;
-      margin: calc(60px - #{$universal-padding}) 0;
-      width: calc(100% - #{$universal-padding * 4});
-      top: 0;
-      left: 0;
+      @include mobile-layout;
       .contact-narrative {
         width: 100%;
         padding: 0px;
       }
       .contact-icons {
-        display: block;
         width: 100%;
-        text-align: center;
         svg {
           padding: $universal-padding;
         }

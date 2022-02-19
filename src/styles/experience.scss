@@ -34,20 +34,8 @@
     }
   }
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    position: relative;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
     .experience-layout {
-      display: block;
-      height: 100%;
-      transform: none;
-      position: relative;
-      padding: $universal-padding * 2;
-      margin: calc(60px - #{$universal-padding}) 0;
-      width: calc(100% - #{$universal-padding * 4});
-      top: 0;
-      left: 0;
+      @include mobile-layout;
       .experience {
         width: 100%;
       }

@@ -27,14 +27,16 @@ const Header:FunctionComponent = () => {
 
   return (
     <header className={`header ${ExpandedState ? 'expanded' : ''}`}>
-      <Link to={'/'}>
-        <GatsbyImage
-          image={image}
-          alt={'jlchuang logo'}
-          className='jlchuang-logo'
-        />
-      </Link>
-      <NavBar onChange={toggleExpandedState} />
+      <div className='header-container'>
+        <Link to={'/'}>
+          <GatsbyImage
+            image={image}
+            alt={'jlchuang logo'}
+            className='jlchuang-logo'
+          />
+        </Link>
+        <NavBar onChange={toggleExpandedState} />
+      </div>
     </header>
   );
 };

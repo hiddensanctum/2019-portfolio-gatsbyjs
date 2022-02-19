@@ -35,7 +35,7 @@ const Landing:FunctionComponent = () => (
             <a href='#about' className='anchor'>
               <div>
                 <h1 className='intro' data-aos='fade-down'>James Chuang</h1>
-                <p className='subtitle'>Senior Frontend Engineer | Seattle, Washington</p>
+                <p className='subtitle'>Software Team Lead | Seattle, Washington</p>
               </div>
             </a>
           </div>
