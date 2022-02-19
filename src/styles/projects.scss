@@ -33,7 +33,7 @@
     .project-technologies {
       display: flex;
       svg {
-        width: 10%;
+        max-width: 50px;
         fill: $jlchuang-accent-color;
         padding: $universal-padding;
       }
@@ -44,7 +44,7 @@
     height: 250px;
     opacity: .8;
   }
-  @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+  @media only screen and (max-device-width : 768px) {
     .projects-layout {
       @include mobile-layout;
       .projects-list {

@@ -3,8 +3,6 @@
 .about-viewport {
   @include flex-center;
   background: $jlchuang-dark-color;
-  background-size: cover;
-  background-position: center;
   min-height: 100vh;
   .about-layout {
     @include section-box;
@@ -30,7 +28,7 @@
     padding-left: 10px;
     width: 40%;
   }
-  @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+  @media only screen and (max-device-width : 768px) {
     .about-layout {
       @include mobile-layout;
     }
@@ -38,6 +36,9 @@
       width: 100%;
       padding-right: 0;
       text-align: justify;
+      .profile-section .profile-icon {
+        font-size: 200px;
+      }
     }
     .skill-section {
       width: 100%;
