@@ -37,4 +37,35 @@
       padding: 10px 12px;
     }
   }
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    .about-layout {
+      display: block;
+      height: 100%;
+      transform: none;
+      position: relative;
+      padding: $universal-padding * 2;
+      margin: auto;
+      width: calc(100% - #{$universal-padding * 4});
+      top: 0;
+      left: 0;
+    }
+    .about-section {
+      width: 100%;
+    }
+    .skill-section {
+      display: flex;
+      text-align: left;
+      width: 100%;
+      padding-left: 0;
+      svg {
+        height: auto;
+        width: calc(33.33% - #{$universal-padding * 2});
+        padding: $universal-padding;
+      }
+    }
+  }
 }
