@@ -48,7 +48,7 @@
       transform: none;
       position: relative;
       padding: $universal-padding * 2;
-      margin: auto;
+      margin: calc(60px - #{$universal-padding}) 0;
       width: calc(100% - #{$universal-padding * 4});
       top: 0;
       left: 0;
