@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -23,17 +22,6 @@ const Index = ({ data, location }) => {
       <Contact />
     </Layout>
   );
-};
-
-Index.propTypes = {
-  data: PropTypes.objectOf({
-    site: PropTypes.objectOf({
-      siteMetadata: PropTypes.objectOf({
-        title: PropTypes.string,
-      }),
-    }),
-  }),
-  location: PropTypes.string,
 };
 
 export default Index;
