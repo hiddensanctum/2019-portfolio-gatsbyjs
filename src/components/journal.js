@@ -1,4 +1,5 @@
 import React from "react"
+import Image from "gatsby-image"
 import { StaticQuery, graphql, Link } from 'gatsby';
 import "../styles/journal.scss"
 
@@ -24,6 +25,13 @@ const Journal = () => {
                   date(formatString: "MMMM DD, YYYY")
                   title
                   description
+                  featuredImage {
+                    childImageSharp {
+                      fluid(maxWidth: 630, maxHeight: 480) {
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -32,19 +40,24 @@ const Journal = () => {
       `}
       render={data => {
         const posts = data.allMarkdownRemark.edges;
+
         return (
-          <div className="journal-viewport">
+          <div className="journal-viewport" name="journal">
             <div className="journal-layout">
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
                 return (
                   <article key={node.fields.slug}>
                     <header>
-                      <h3>
-                        <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                      <Image 
+                        fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
+                        className="featured-blog-image"
+                      />
+                      <h2>
+                        <Link to={node.fields.slug}>
                           {title}
                         </Link>
-                      </h3>
+                      </h2>
                       <small>{node.frontmatter.date}</small>
                     </header>
                     <section>

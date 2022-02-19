@@ -6,7 +6,7 @@ import "../styles/contact.scss"
 
 const Contact = () => {
   return (
-    <div className="contact-section">
+    <div className="contact-section" name="contact">
       <div className="contact-layout">
         <div className="contact-narrative">
           <h2>Contact Me</h2>

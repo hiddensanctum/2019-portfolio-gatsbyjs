@@ -1,6 +1,6 @@
 @import 'variables.scss';
 
-.projects-section {
+.projects-viewport {
   background: $jlchuang-dark-color;
   background-size: cover;
   background-position: center;
@@ -17,5 +17,14 @@
     transform: translate(-50%, -50%);
     width: 1000px;
     max-width: 100%;
+    .projects-section {
+      width: 100%;
+      .projects-list {
+        display: flex;
+        .project-card {
+          width: 50%;
+        }
+      }
+    }
   }
 }

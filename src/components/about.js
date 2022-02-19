@@ -6,7 +6,7 @@ import "../styles/about.scss"
 
 const About = () => {
   return (
-    <div className="about-viewport">
+    <div className="about-viewport" name="about">
       <div className="about-layout">
         <div className="about-section">
           <div className="profile-section">

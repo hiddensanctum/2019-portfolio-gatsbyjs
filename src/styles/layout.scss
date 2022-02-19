@@ -1,29 +1,36 @@
 @import 'variables.scss';
 
-body {
-  color: $jlchuang-pale-color;
-  background: $jlchuang-dark-color;
-  height: 100%;
-  width: 100%;
-  margin: 0px;
-  font-size: 16px;
-  font-family: 'Josefin Sans', sans-serif;
-  letter-spacing: 0.5px;
-  line-height: 1.2;
-  .layout {
-    background: $jlchuang-dark-color;
-  }
-  h1, h2, h3, h4, h5 {
-    color: $jlchuang-accent-color;
-    margin-top: $universal-padding;
-    margin-bottom: $universal-padding * 2;
+html {
+  scroll-behavior: smooth;
+  body {
+    color: $jlchuang-pale-color;
+    background: $jlchuang-dark-alt-color;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    font-size: 16px;
     font-family: 'Josefin Sans', sans-serif;
-  }
-  a {
-    color: $jlchuang-accent-color;
-    box-shadow: none;
-    &:hover, &:active {
-      color: $jlchuang-accent-dark-color;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    h1, h2, h3, h4, h5 {
+      color: $jlchuang-accent-color;
+      margin-top: $universal-padding;
+      margin-bottom: $universal-padding * 2;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    a {
+      color: $jlchuang-accent-color;
+      box-shadow: none;
+      text-decoration: none;
+      &:hover, &:active {
+        color: $jlchuang-accent-dark-color;
+      }
     }
   }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
 }

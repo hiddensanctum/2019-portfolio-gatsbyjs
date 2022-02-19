@@ -5,7 +5,7 @@ import "../styles/experience.scss"
 
 const Experience = () => {
   return (
-    <div className="experience-section">
+    <div className="experience-section" name="experience">
       <div className="experience-layout">
         <div className="experience">
           <h2>
@@ -15,13 +15,13 @@ const Experience = () => {
             <span>May 2018 - Present</span>
             <h3>Tyler Technologies</h3>
             <h4>Senior Software Engineer</h4>
-            <p>Currently I work as a Software Engineer in the Data Insights Division of Tyler Technologies developing Performance KPI software to enable data analysis for government data to drive data based decisions.</p>
+            <p>Currently I work as a Senior Software Engineer in the Data Insights Division of Tyler Technologies developing Performance KPI software to enable data analysis for government data to drive data based decisions.</p>
           </div>
           <div className="experience-block">
             <span>Apr 2014 - May 2018</span>
             <h3>Socrata</h3>
             <h4>Senior Front End Developer</h4>
-            <p>Scope out large data exploration and story telling applications for the public sector. Provide mentorship for newer developers. Develop all-inclusive technical project plan and excute on that project plan. Create the UI/UX design and worked closely with program manager to develop roadmap for the application. Some of the projects that I have worked on consist of creating custom applications like the Seattle Department of Transportation Projects Dashboard.</p>
+            <p>Scope out large data exploration and story telling applications for the public sector. Provide mentorship for newer developers. Develop all-inclusive technical project plan and excute on that project plan. Create the UI/UX design and worked with program manager to develop roadmaps.</p>
           </div>
           <div className="experience-block">
             <span>Jan 2014 - Mar 2014</span>
