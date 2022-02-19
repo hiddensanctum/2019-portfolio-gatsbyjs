@@ -33,12 +33,6 @@ nav {
   }
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    // display: block;
-    // right: 0;
-    // position: fixed;
-    // transition: all 0.5s ease;
-    // top: 0;
-    // z-index: 9;
     a {
       font-size: 18px;
     }
@@ -74,11 +68,11 @@ nav {
           display: block;
           color: $jlchuang-pale-color;
           padding: $universal-padding;
+          font-size: 15px;
           &:hover, &:active {
             box-shadow: none;
           }
         }
-        padding: 10px;
         &:active, &:hover, &:focus {
           background-color: $jlchuang-accent-color;
         }
