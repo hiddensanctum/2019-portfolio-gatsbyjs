@@ -1,7 +1,6 @@
 @import 'variables.scss';
 
 .landing-section {
-  background: url(./landing-background.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -9,7 +8,7 @@
   position: relative;
   .landing-layout {
     position: absolute;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
     width: 100%;
     height: 100%;
     top: 0;
