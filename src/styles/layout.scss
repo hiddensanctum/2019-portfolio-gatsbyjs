@@ -1,13 +1,48 @@
-.layout {
-  background: #1c1c1d;
-}
+@import 'variables.scss';
+
 body {
+  color: $jlchuang-dark-color;
   height: 100%;
   width: 100%;
   font-size: 16px;
-  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 0.5px;
   line-height: 1.2;
-  color: #FFFFFF;
-  background: #1c1c1d;
+  .layout {
+    background: $jlchuang-pale-color;
+  }
+  h1, h2, h3, h4, h5 {
+    color: $jlchuang-dark-color;
+    margin-top: $universal-padding;
+    margin-bottom: $universal-padding * 2;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  a {
+    color: $jlchuang-accent-color;
+    box-shadow: none;
+    &:hover, &:active {
+      color: $jlchuang-accent-dark-color;
+      box-shadow: 0 1px 0 0 currentColor;
+    }
+  }
 }
+
+body.dark {
+  color: $jlchuang-pale-color;
+  background: $jlchuang-dark-color;
+  .layout {
+    background: $jlchuang-dark-color;
+  }
+  h1, h2, h3, h4, h5 {
+    color: $jlchuang-pale-color;
+  }
+  a {
+    color: $jlchuang-accent-color;
+    box-shadow: none;
+    &:hover, &:active {
+      color: $jlchuang-accent-dark-color;
+      box-shadow: 0 1px 0 0 currentColor;
+    }
+  }
+}
+

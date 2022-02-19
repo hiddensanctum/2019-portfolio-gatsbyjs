@@ -1,5 +1,7 @@
-.about-section {
-  background: #575e66;
+@import 'variables.scss';
+
+.about-viewport {
+  background: $jlchuang-pale-color;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -15,5 +17,30 @@
     transform: translate(-50%, -50%);
     width: 1000px;
     max-width: 100%;
+  }
+  .about-section {
+    padding-right: 10px;
+    width: 50%;
+    .profile-section {
+      text-align: center;
+      .profile-icon {
+        font-size: 300px;
+      }
+    }
+  }
+  .skill-section {
+    svg {
+      width: 33.33%;
+      height: 120px;
+      padding: 10px;
+    }
+    padding-left: 10px;
+    width: 50%;
+  }
+}
+
+body.dark {
+  .about-viewport {
+    background: $jlchuang-dark-color;
   }
 }

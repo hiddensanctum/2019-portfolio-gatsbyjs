@@ -7,7 +7,7 @@ header.header {
   top: 0;
   left: 0;
   width: 100%;
-  color: white;
+  color: #1d1d1d;
   z-index: 99;
   div {
     display: flex;
@@ -27,7 +27,7 @@ header.header {
 
 body.dark {
   header.header {
-    background: black;
+    // background: #1d1d1d;
     h1 {
       color: white;
     }

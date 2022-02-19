@@ -16,7 +16,7 @@ nav {
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 500;
         font-size: 14px;
-        color: #828282;
+        color: #1d1d1d;
         text-transform: uppercase;
         text-decoration: none;
         box-shadow: none;
@@ -27,5 +27,20 @@ nav {
         }
       }
     }
+  }
+  .hidden {
+    display: none;
+  }
+  .dark {
+    color: #1d1d1d;
+  }
+}
+
+body.dark {
+  ul li a {
+    color: #ffffff;
+  }
+  svg {
+    color: #ffffff;
   }
 }

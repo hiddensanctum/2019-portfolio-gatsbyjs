@@ -1,13 +1,13 @@
 @import 'variables.scss';
 
-.projects-section {
-  background: $jlchuang-pale-color;
+.journal-viewport {
+  background: $jlchuang-pale-alt-color;
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 100vh;
   position: relative;
-  .projects-layout {
+  .journal-layout {
     display: flex;
     margin: 0;
     position: absolute;
@@ -21,7 +21,7 @@
 }
 
 body.dark {
-  .projects-section {
-    background: $jlchuang-dark-color;
+  .journal-viewport {
+    background: $jlchuang-dark-alt-color;
   }
 }

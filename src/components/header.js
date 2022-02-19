@@ -20,7 +20,6 @@ const Header = (props) => {
       }
     }    
   `)
-  const { title } = props
   return (
     <header className="header">
       <Link
@@ -46,10 +45,6 @@ const Header = (props) => {
             borderRadius: `50%`,
           }}
         />
-        <div>
-          <h1>{title}</h1>
-          {/* <span>Reviews and Articles on technology that impacts your daily life</span> */}
-        </div>
       </Link>
       <NavBar />
     </header>

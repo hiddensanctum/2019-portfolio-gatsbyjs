@@ -1,6 +1,7 @@
+@import 'variables.scss';
+
 .contact-section {
-  color: black;
-  background: white;
+  background: $jlchuang-pale-color;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -23,10 +24,31 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      .email-icon {
+        color: #669c41;
+      }
+      .linkedin-icon {
+        color: #0173b2;
+      }
+      .github-icon {
+        color: black;;
+      }
+      .email-icon,
+      .linkedin-icon,
+      .github-icon {
+        text-decoration: none;
+        box-shadow: none;
+      }
       svg {
         font-size: 90px;
         padding: 15px;
       }
     }
+  }
+}
+
+body.dark {
+  .contact-section {
+    background: $jlchuang-dark-color;
   }
 }

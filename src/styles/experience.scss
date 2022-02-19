@@ -1,5 +1,7 @@
+@import 'variables.scss';
+
 .experience-section {
-  background: gray;
+  background: $jlchuang-pale-alt-color;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -35,5 +37,11 @@
       padding-left: 10px;
       width: 30%;
     }
+  }
+}
+
+body.dark {
+  .experience-section {
+    background: $jlchuang-dark-alt-color;
   }
 }

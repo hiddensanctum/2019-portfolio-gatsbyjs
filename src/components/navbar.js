@@ -1,4 +1,6 @@
 import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "gatsby"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import "../styles/navbar.scss"
@@ -16,10 +18,13 @@ const Navbar = () => {
             <label>
               <input
                 type="checkbox"
+                className="hidden"
                 onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
                 checked={theme === 'dark'}
               />{' '}
-              Dark mode
+              {theme === 'dark' ? 
+                (<FontAwesomeIcon icon={faMoon} />) :
+                (<FontAwesomeIcon icon={faSun} className="dark" />)}
             </label>
           )}
         </ThemeToggler>

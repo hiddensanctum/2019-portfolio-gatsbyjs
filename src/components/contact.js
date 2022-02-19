@@ -1,8 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedinIn, faGithubAlt } from '@fortawesome/free-brands-svg-icons'
-import { Link } from "gatsby"
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
+import { faLinkedinIn, faGithubAlt } from "@fortawesome/free-brands-svg-icons"
 import "../styles/contact.scss"
 
 const Contact = (props) => {
@@ -14,15 +13,30 @@ const Contact = (props) => {
           <p>I am always interested in hearing about new ideas and opportunities! Feel free to contact me through the various means on the right. You can also download my resume in PDF format with the button below.</p>
         </div>
         <div className="contact-icons">
-          <Link to={`https://www.linkedin.com/in/jlchuang/`}>
+          <a 
+            href="https://www.linkedin.com/in/jlchuang/"
+            className="linkedin-icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faLinkedinIn} />
-          </Link>
-          <Link to={`https://github.com/hiddensanctum`}>
+          </a>
+          <a
+            href="https://github.com/hiddensanctum"
+            className="github-icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faGithubAlt} />
-          </Link>
-          <Link to={`mailto:jameschuang13@gmail.com`}>
-            <FontAwesomeIcon icon={faEnvelopeOpen} />
-          </Link>
+          </a>
+          <a 
+            href="mailto:jameschuang13@gmail.com"
+            className="email-icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
         </div>
       </div>
     </div>
