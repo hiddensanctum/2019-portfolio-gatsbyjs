@@ -30,7 +30,7 @@ const Contact = () => (
           <FontAwesomeIcon icon={faGithubAlt} className='github-icon' />
         </a>
         <a
-          href='mailto:jameschuang13@gmail.com'
+          href='mailto:hello@jlchuang.com'
           className='email-icon'
           target='_blank'
           rel='noopener noreferrer'
