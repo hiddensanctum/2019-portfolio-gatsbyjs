@@ -65,9 +65,12 @@ nav {
       height: 100vh;
       padding: 0;
       li {
+        padding: 0;
         margin: 0;
         a {
+          display: block;
           color: $jlchuang-pale-color;
+          padding: $universal-padding;
           &:hover, &:active {
             box-shadow: none;
           }
