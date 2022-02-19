@@ -1,7 +1,7 @@
 import React from "react"
 import "../styles/landing.scss"
 
-const Landing = (props) => {
+const Landing = () => {
   return (
     <div className="landing-section">
       <div className="landing-layout">

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSuitcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import "../styles/experience.scss"
 
-const Experience = (props) => {
+const Experience = () => {
   return (
     <div className="experience-section">
       <div className="experience-layout">

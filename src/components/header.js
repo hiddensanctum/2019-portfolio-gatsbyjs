@@ -6,7 +6,7 @@ import "../styles/header.scss"
 
 import { rhythm } from "../utils/typography"
 
-const Header = (props) => {
+const Header = () => {
   const data = useStaticQuery(graphql`
     query LogoQuery {
       __typename

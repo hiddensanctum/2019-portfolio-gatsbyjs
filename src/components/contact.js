@@ -4,7 +4,7 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 import { faLinkedinIn, faGithubAlt } from "@fortawesome/free-brands-svg-icons"
 import "../styles/contact.scss"
 
-const Contact = (props) => {
+const Contact = () => {
   return (
     <div className="contact-section">
       <div className="contact-layout">
