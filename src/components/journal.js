@@ -1,5 +1,4 @@
 import React from "react"
-import { rhythm } from "../utils/typography"
 import { StaticQuery, graphql, Link } from 'gatsby';
 import "../styles/journal.scss"
 
@@ -41,11 +40,7 @@ const Journal = () => {
                 return (
                   <article key={node.fields.slug}>
                     <header>
-                      <h3
-                        style={{
-                          marginBottom: rhythm(1 / 4),
-                        }}
-                      >
+                      <h3>
                         <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                           {title}
                         </Link>

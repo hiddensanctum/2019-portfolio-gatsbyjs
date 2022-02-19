@@ -4,8 +4,6 @@ import Image from "gatsby-image"
 import NavBar from './navbar.js'
 import "../styles/header.scss"
 
-import { rhythm } from "../utils/typography"
-
 const Header = () => {
   const data = useStaticQuery(graphql`
     query LogoQuery {
@@ -22,28 +20,10 @@ const Header = () => {
   `)
   return (
     <header className="header">
-      <Link
-        style={{
-          display: `flex`,
-          alignItems: `center`,
-          boxShadow: `none`,
-          textDecoration: `none`,
-          color: `inherit`,
-        }}
-        to={`/`}
-      >
+      <Link to={`/`}>
         <Image
           fixed={data.logo.childImageSharp.fixed}
           alt={"mindfulgadgets logo"}
-          style={{
-            marginRight: rhythm(1 / 2),
-            marginBottom: 0,
-            minWidth: 40,
-            borderRadius: `100%`,
-          }}
-          imgStyle={{
-            borderRadius: `50%`,
-          }}
         />
       </Link>
       <NavBar />
