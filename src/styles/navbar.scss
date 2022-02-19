@@ -1,0 +1,31 @@
+nav {
+  display: flex;
+  // border-top: 1px solid #e6e6e6;
+  // border-bottom: 1px solid #e6e6e6;
+  ol, ul {
+    list-style: none outside none;
+  }
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 10px 0;
+    li {
+      margin: 0 20px;
+      a {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #828282;
+        text-transform: uppercase;
+        text-decoration: none;
+        box-shadow: none;
+        &:hover {
+          transition: all 0.5s ease;
+          padding-bottom: 10px;
+          border-bottom: 1px solid red;
+        }
+      }
+    }
+  }
+}
