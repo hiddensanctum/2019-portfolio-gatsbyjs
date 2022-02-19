@@ -27,7 +27,7 @@ const BlogPostTemplate = ({ data, location, pageContext }) => {
         <meta name='twitter:card' content='summary_large_image' />
         <meta
           name='twitter:image'
-          content={`${this.props.data.site.siteMetadata.siteUrl}${featuredImageSrc}`}
+          content={`${data.site.siteMetadata.siteUrl}${featuredImageSrc}`}
         />
       </Helmet>
       <article className='article-post'>
