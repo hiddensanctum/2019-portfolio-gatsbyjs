@@ -33,7 +33,7 @@ const Navbar:FunctionComponent<Props> = ({ onChange }) => {
       <li><Link to={'#about'}>About</Link></li>
       <li><Link to={'#experience'}>Experience</Link></li>
       <li><Link to={'#projects'}>Projects</Link></li>
-      <li><a href='https://medium.com/@jlchuang'><FontAwesomeIcon icon={faMedium} /> Journal</a></li>
+      <li><a href='https://medium.com/@jlchuang'><FontAwesomeIcon icon={faMedium} className='medium' /> Journal</a></li>
       <li><Link to={'#contact'}>Contact</Link></li>
     </ul>
   ));
