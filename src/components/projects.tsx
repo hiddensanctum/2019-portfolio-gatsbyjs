@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDesktop } from '@fortawesome/free-solid-svg-icons';
 import CohesionImage from './image-components/cohesion';
 import SdotImage from './image-components/sdot';
 import '../styles/projects.scss';
 
-const Projects = () => (
-  <div className='projects-viewport' name='projects' id='projects'>
+const Projects:FunctionComponent = () => (
+  <div className='projects-viewport' id='projects'>
     <div className='projects-layout'>
       <div className='projects-section' data-aos='fade-down'>
         <h2><FontAwesomeIcon icon={faDesktop} /> Projects</h2>

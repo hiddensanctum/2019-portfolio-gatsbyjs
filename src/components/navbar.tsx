@@ -1,18 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { FunctionComponent, useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faMedium } from '@fortawesome/free-brands-svg-icons';
 import '../styles/navbar.scss';
 
-const Navbar = (props) => {
+interface Props {
+  onChange?: Function;
+}
+
+const Navbar:FunctionComponent<Props> = ({ onChange }) => {
   const [MobileNav, toggleMobileNav] = useState(false);
 
   useEffect(() => {
-    if (props.onChange) {
-      props.onChange(MobileNav);
+    if (onChange) {
+      onChange(MobileNav);
     }
-  })
+  });
 
   const navBarContent = (device) => (device === 'navbar-mobile' ? (
     <ul className={device}>

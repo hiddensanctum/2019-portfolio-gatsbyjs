@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { FunctionComponent, useState } from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import NavBar from './navbar';
 import '../styles/header.scss';
 
-const Header = () => {
+const Header:FunctionComponent = () => {
   const data = useStaticQuery(graphql`
     query LogoQuery {
       __typename

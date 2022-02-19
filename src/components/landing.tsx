@@ -1,11 +1,11 @@
-import React from 'react';
-import { graphql, StaticQuery } from 'gatsby'
-import BackgroundImage from 'gatsby-background-image'
+import React, { FunctionComponent } from 'react';
+import { graphql, StaticQuery } from 'gatsby';
+import BackgroundImage from 'gatsby-background-image';
 import { getImage } from 'gatsby-plugin-image';
-import { convertToBgImage } from 'gbimage-bridge'
+import { convertToBgImage } from 'gbimage-bridge';
 import '../styles/landing.scss';
 
-const Landing = () => (
+const Landing:FunctionComponent = () => (
   <StaticQuery
     query={graphql`
       query {

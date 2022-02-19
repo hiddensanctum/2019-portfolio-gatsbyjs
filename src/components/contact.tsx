@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faLinkedinIn, faGithubAlt, faMedium } from '@fortawesome/free-brands-svg-icons';
 import '../styles/contact.scss';
 
-const Contact = () => (
-  <div className='contact-section' name='contact' id='contact'>
+const Contact:FunctionComponent = () => (
+  <div className='contact-section' id='contact'>
     <div className='contact-layout'>
       <div className='contact-narrative' data-aos='fade-down'>
         <h2>Contact Me</h2>

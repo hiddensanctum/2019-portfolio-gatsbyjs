@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import Skills from './skills';
 import '../styles/about.scss';
 
-const About = () => (
-  <div className='about-viewport' name='about' id='about'>
+const About:FunctionComponent = () => (
+  <div className='about-viewport' id='about'>
     <div className='about-layout'>
       <div className='about-section' data-aos='fade-down'>
         <div className='profile-section'>

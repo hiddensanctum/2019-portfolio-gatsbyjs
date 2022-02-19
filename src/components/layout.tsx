@@ -1,14 +1,23 @@
-import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
+import React, { FunctionComponent } from 'react';
 import Helmet from 'react-helmet';
 import Header from './header';
 import useScript from 'react-script-hook';
 import '../styles/layout.scss';
 
-const Layout = ({ title, children }) => {
+interface Props {
+  children: any;
+}
+
+declare global {
+  interface Window {
+    AOS:any;
+  }
+}
+
+const Layout:FunctionComponent<Props> = ({ children }) => {
   useScript({
     src: 'https://unpkg.com/aos@2.3.1/dist/aos.js',
-    onload: () =>  window.AOS.init(),
+    onload: () => window.AOS.init(),
   });
 
   return (
@@ -17,17 +26,10 @@ const Layout = ({ title, children }) => {
         <link href='https://fonts.googleapis.com/css2?family=Cardo&family=Josefin+Sans:wght@100;400&display=swap' rel='stylesheet' />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
       </Helmet>
-      <Header
-        title={title}
-      />
+      <Header />
       <main>{children}</main>
     </div>
   );
-};
-
-Layout.propTypes = {
-  title: PropTypes.string,
-  children: PropTypes.object,
 };
 
 export default Layout;

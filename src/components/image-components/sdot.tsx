@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-const SdotImage = () => (
+const SdotImage:FunctionComponent = () => (
   <StaticQuery
     query={graphql`
       query SdotPhotoQuery {
