@@ -1,12 +1,19 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Image from "gatsby-image"
+import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
+import { Helmet } from "react-helmet"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowCircleRight, faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "../styles/blogpost.scss"
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
+    const post = this.props.data.allMdx.edges[0].node
     const siteTitle = this.props.data.site.siteMetadata.title
+    const featuredImageSrc = post.frontmatter.featuredImage.childImageSharp.fluid.src
     const { previous, next } = this.props.pageContext
 
     return (
@@ -15,12 +22,32 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article>
-          <header>
-            <h1>{post.frontmatter.title}</h1>
-            <p>{post.frontmatter.date}</p>
-          </header>
-          <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Helmet title={post.frontmatter.title}>
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta
+            name="twitter:image"
+            content={`${this.props.data.site.siteMetadata.siteUrl}${featuredImageSrc}`}
+          />
+        </Helmet>
+        <article className="article-post">
+          <div className="article-header">
+            <h1>
+              {post.frontmatter.title}
+            </h1>
+            <p>
+              {post.frontmatter.date}
+            </p>
+          </div>
+          <div className="article-section">
+            <Image 
+              fluid={post.frontmatter.featuredImage.childImageSharp.fluid}
+              className="featured-blog-image"
+            />
+            <section dangerouslySetInnerHTML={{ __html: post.html }} />
+            <MDXRenderer>
+              {post.body}
+            </MDXRenderer>
+          </div>
         </article>
 
         <nav>
@@ -28,14 +55,14 @@ class BlogPostTemplate extends React.Component {
             <li>
               {previous && (
                 <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
+                  <FontAwesomeIcon icon={faArrowCircleLeft}  /> {previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li>
               {next && (
                 <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
+                  {next.frontmatter.title} <FontAwesomeIcon icon={faArrowCircleRight}  />
                 </Link>
               )}
             </li>
@@ -54,17 +81,30 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
-      html
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-        description
+    allMdx(filter: {fields: {slug: {eq: $slug}}}) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 160)
+          body
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            description
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 630, maxHeight: 480) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
 `
+

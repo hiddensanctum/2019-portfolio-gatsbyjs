@@ -20,7 +20,7 @@
   }
   .about-section {
     padding-right: 10px;
-    width: 50%;
+    width: 60%;
     .profile-section {
       text-align: center;
       .profile-icon {
@@ -30,11 +30,11 @@
   }
   .skill-section {
     text-align: center;
+    padding-left: 10px;
+    width: 40%;
     svg {
       height: 100px;
       padding: 10px 12px;
     }
-    padding-left: 10px;
-    width: 50%;
   }
 }
