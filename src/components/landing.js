@@ -10,7 +10,7 @@ const Landing = () => (
     query {
       desktop: file(relativePath: { eq: "landing-background.jpg" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 1920) {
+          fluid(quality: 85, maxWidth: 1280) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
