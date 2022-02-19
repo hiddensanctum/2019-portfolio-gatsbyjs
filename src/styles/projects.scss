@@ -1,7 +1,7 @@
 @import 'variables.scss';
 
 .projects-section {
-  background: $jlchuang-pale-color;
+  background: $jlchuang-dark-color;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -17,11 +17,5 @@
     transform: translate(-50%, -50%);
     width: 1000px;
     max-width: 100%;
-  }
-}
-
-body.dark {
-  .projects-section {
-    background: $jlchuang-dark-color;
   }
 }

@@ -1,7 +1,7 @@
 @import 'variables.scss';
 
 .journal-viewport {
-  background: $jlchuang-pale-alt-color;
+  background: $jlchuang-dark-alt-color;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -17,11 +17,5 @@
     transform: translate(-50%, -50%);
     width: 1000px;
     max-width: 100%;
-  }
-}
-
-body.dark {
-  .journal-viewport {
-    background: $jlchuang-dark-alt-color;
   }
 }

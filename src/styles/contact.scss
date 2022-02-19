@@ -1,7 +1,7 @@
 @import 'variables.scss';
 
 .contact-section {
-  background: $jlchuang-pale-color;
+  background: $jlchuang-dark-color;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -31,7 +31,7 @@
         color: #0173b2;
       }
       .github-icon {
-        color: black;;
+        color: $jlchuang-pale-color;
       }
       .email-icon,
       .linkedin-icon,
@@ -44,11 +44,5 @@
         padding: 15px;
       }
     }
-  }
-}
-
-body.dark {
-  .contact-section {
-    background: $jlchuang-dark-color;
   }
 }

@@ -1,7 +1,7 @@
+@import 'variables.scss';
+
 nav {
   display: flex;
-  // border-top: 1px solid #e6e6e6;
-  // border-bottom: 1px solid #e6e6e6;
   ol, ul {
     list-style: none outside none;
   }
@@ -16,31 +16,11 @@ nav {
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 500;
         font-size: 14px;
-        color: #1d1d1d;
+        color: $jlchuang-pale-color;
         text-transform: uppercase;
         text-decoration: none;
         box-shadow: none;
-        &:hover {
-          transition: all 0.5s ease;
-          padding-bottom: 10px;
-          border-bottom: 1px solid red;
-        }
       }
     }
-  }
-  .hidden {
-    display: none;
-  }
-  .dark {
-    color: #1d1d1d;
-  }
-}
-
-body.dark {
-  ul li a {
-    color: #ffffff;
-  }
-  svg {
-    color: #ffffff;
   }
 }

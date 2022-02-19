@@ -27,7 +27,7 @@ const Contact = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faGithubAlt} />
+            <FontAwesomeIcon icon={faGithubAlt} className="github-icon" />
           </a>
           <a 
             href="mailto:jameschuang13@gmail.com"
