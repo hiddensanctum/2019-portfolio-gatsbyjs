@@ -6,7 +6,7 @@ const SdotImage:FunctionComponent = () => (
   <StaticQuery
     query={graphql`
       query SdotPhotoQuery {
-        allImageSharp(filter: {gatsbyImageData: {eq: "SDOT.png"}}) {
+        allImageSharp(filter: {fluid: {originalName: {eq: "SDOT.png"}}}) {
           edges {
             node {
               gatsbyImageData(
