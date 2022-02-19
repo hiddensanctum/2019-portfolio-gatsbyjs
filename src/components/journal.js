@@ -21,7 +21,7 @@ const Journal = () => (
                 slug
               }
               frontmatter {
-                date(formatString: 'MMMM DD, YYYY')
+                date(formatString: "MMMM DD, YYYY")
                 title
                 description
                 featuredImage {

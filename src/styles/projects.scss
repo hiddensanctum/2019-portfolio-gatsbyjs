@@ -24,6 +24,7 @@
       display: flex;
     }
     .project-card {
+      margin-top: $universal-margin;
       width: 50%;
       margin-right: $universal-margin * 2;
       &:last-child {

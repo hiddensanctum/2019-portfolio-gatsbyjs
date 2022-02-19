@@ -8,7 +8,7 @@ const Header = () => {
   const data = useStaticQuery(graphql`
     query LogoQuery {
       __typename
-      logo: file(absolutePath: {regex: '/logo.png/'}) {
+      logo: file(absolutePath: {regex: "/logo.png/"}) {
         id
         childImageSharp {
           fixed(height: 40, width: 40) {

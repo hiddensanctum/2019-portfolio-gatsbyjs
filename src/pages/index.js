@@ -11,11 +11,11 @@ import Projects from '../components/projects';
 import Journal from '../components/journal';
 import '../styles/layout.scss';
 
-const BlogIndex = ({ data }) => {
+const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
 
   return (
-    <Layout location={this.props.location} title={siteTitle}>
+    <Layout location={location} title={siteTitle}>
       <SEO title='Welcome' />
       <Landing />
       <About />
@@ -35,6 +35,7 @@ BlogIndex.propTypes = {
       }),
     }),
   }),
+  location: PropTypes.string,
 };
 
 export default BlogIndex;
