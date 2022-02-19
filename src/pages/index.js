@@ -11,7 +11,7 @@ import Projects from '../components/projects';
 import Journal from '../components/journal';
 import '../styles/layout.scss';
 
-const BlogIndex = ({ data, location }) => {
+const Index = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
 
   return (
@@ -27,18 +27,18 @@ const BlogIndex = ({ data, location }) => {
   );
 };
 
-BlogIndex.propTypes = {
-  data: PropTypes.objectOf({
-    site: PropTypes.objectOf({
-      siteMetadata: PropTypes.objectOf({
-        title: PropTypes.string,
-      }),
-    }),
-  }),
-  location: PropTypes.string,
-};
+// Index.propTypes = {
+//   data: PropTypes.objectOf({
+//     site: PropTypes.objectOf({
+//       siteMetadata: PropTypes.objectOf({
+//         title: PropTypes.string,
+//       }),
+//     }),
+//   }),
+//   location: PropTypes.string,
+// };
 
-export default BlogIndex;
+export default Index;
 
 export const pageQuery = graphql`
   query {

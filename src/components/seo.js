@@ -39,12 +39,6 @@ function SEO({
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
-      link={[
-        {
-          href: 'https://fonts.googleapis.com/css2?family=Cardo&family=Josefin+Sans:wght@100;400&display=swap',
-          rel: 'stylesheet',
-        },
-      ]}
       meta={[
         {
           name: 'description',
