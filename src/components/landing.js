@@ -7,8 +7,8 @@ const Landing = (props) => {
       <div className="landing-layout">
         <a href="#about" class="anchor">
           <div>
-            <h1 class="intro">James Chuang</h1>
-            <p class="subtitle">Front End Developer | Seattle, Washington</p>
+            <h1 className="intro">James Chuang</h1>
+            <p className="subtitle">Front End Developer | Seattle, Washington</p>
           </div>
         </a>
       </div>

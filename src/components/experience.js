@@ -1,4 +1,6 @@
 import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faSuitcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import "../styles/experience.scss"
 
 const Experience = (props) => {
@@ -6,7 +8,9 @@ const Experience = (props) => {
     <div className="experience-section">
       <div className="experience-layout">
         <div className="experience">
-          <h2>Experience</h2>
+          <h2>
+            <FontAwesomeIcon icon={faSuitcase} /> Experience
+          </h2>
           <div className="experience-block">
             <span>May 2018 - Present</span>
             <h3>Tyler Technologies</h3>
@@ -27,7 +31,9 @@ const Experience = (props) => {
           </div>
         </div>
         <div className="education">
-          <h2>Education</h2>
+          <h2>
+            <FontAwesomeIcon icon={faGraduationCap} /> Education
+          </h2>
           <div className="education-block">
             <span>Oct 2013 - Dec 2013</span>
             <h3>Code Fellows</h3>
