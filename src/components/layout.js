@@ -1,21 +1,13 @@
 import React from "react"
 import Header from './header.js'
-
-import { rhythm } from "../utils/typography"
+import "../styles/layout.scss"
 
 class Layout extends React.Component {
   render() {
     const { title, children } = this.props
 
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(32),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
+      <div className="layout">
         <Header
           title={title}
         />

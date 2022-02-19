@@ -3,6 +3,12 @@ header.header {
   justify-content: space-between;
   width: 100%;
   padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  z-index: 99;
   div {
     display: flex;
     flex-direction: column;
@@ -15,6 +21,18 @@ header.header {
     span {
       font-size: 12px;
       color: #868686;
+    }
+  }
+}
+
+body.dark {
+  header.header {
+    background: black;
+    h1 {
+      color: white;
+    }
+    span {
+      color: white;
     }
   }
 }
