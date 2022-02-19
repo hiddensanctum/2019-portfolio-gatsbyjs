@@ -1,7 +1,7 @@
 @import 'variables.scss';
 
 .contact-section {
-  background: $jlchuang-dark-color;
+  background: $jlchuang-dark-alt-color;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -28,7 +28,8 @@
       align-items: center;
       .email-link,
       .linkedin-link,
-      .github-link {
+      .github-link,
+      .medium-link {
         text-decoration: none;
         box-shadow: none;
         color: $jlchuang-accent-color;

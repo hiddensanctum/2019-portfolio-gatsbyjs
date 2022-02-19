@@ -8,7 +8,6 @@ import Contact from '../components/contact';
 import Experience from '../components/experience';
 import Landing from '../components/landing';
 import Projects from '../components/projects';
-import Journal from '../components/journal';
 import '../styles/layout.scss';
 
 const Index = ({ data, location }) => {
@@ -21,22 +20,21 @@ const Index = ({ data, location }) => {
       <About />
       <Experience />
       <Projects />
-      <Journal />
       <Contact />
     </Layout>
   );
 };
 
-// Index.propTypes = {
-//   data: PropTypes.objectOf({
-//     site: PropTypes.objectOf({
-//       siteMetadata: PropTypes.objectOf({
-//         title: PropTypes.string,
-//       }),
-//     }),
-//   }),
-//   location: PropTypes.string,
-// };
+Index.propTypes = {
+  data: PropTypes.objectOf({
+    site: PropTypes.objectOf({
+      siteMetadata: PropTypes.objectOf({
+        title: PropTypes.string,
+      }),
+    }),
+  }),
+  location: PropTypes.string,
+};
 
 export default Index;
 

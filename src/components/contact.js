@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faLinkedinIn, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn, faGithubAlt, faMedium } from '@fortawesome/free-brands-svg-icons';
 import '../styles/contact.scss';
 
 const Contact = () => (
@@ -30,6 +30,15 @@ const Contact = () => (
           rel='noopener noreferrer'
         >
           <FontAwesomeIcon icon={faGithubAlt} className='github-icon' />
+        </a>
+        <a
+          aria-label="Medium Journal Link"
+          href='https://medium.com/@jlchuang'
+          className='medium-link'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <FontAwesomeIcon icon={faMedium} />
         </a>
         <a
           aria-label="hello@jlchuang.com Email Link"
