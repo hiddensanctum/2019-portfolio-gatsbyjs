@@ -1,40 +1,38 @@
-import React from "react"
+import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import Image from 'gatsby-image';  
+import Image from 'gatsby-image';
 
-const CohesionImage = () => {
-  return (
-    <StaticQuery
-      query={graphql`
-        query CohesionPhotoQuery {
-          allImageSharp(filter: {fluid: {originalName: {eq: "cohesion.png"}}}) {
-            edges {
-              node {
-                fluid {
-                  base64
-                  tracedSVG
-                  srcWebp
-                  srcSetWebp
-                  originalImg
-                  originalName
-                  presentationWidth
-                  presentationHeight
-                }
+const CohesionImage = () => (
+  <StaticQuery
+    query={graphql`
+      query CohesionPhotoQuery {
+        allImageSharp(filter: {fluid: {originalName: {eq: 'cohesion.png'}}}) {
+          edges {
+            node {
+              fluid {
+                base64
+                tracedSVG
+                srcWebp
+                srcSetWebp
+                originalImg
+                originalName
+                presentationWidth
+                presentationHeight
               }
             }
           }
-        }         
-      `}
-      render={data => {
-        const photo = data.allImageSharp.edges[0].node.fluid;
-        return (
-          <div>
-            <Image fluid={photo} className="project-image"/>
-          </div>
-        )
-      }}
-    />
-  )
-}
+        }
+      }
+    `}
+    render={(data) => {
+      const photo = data.allImageSharp.edges[0].node.fluid;
+      return (
+        <div>
+          <Image fluid={photo} className='project-image'/>
+        </div>
+      );
+    }}
+  />
+);
 
-export default CohesionImage
+export default CohesionImage;
