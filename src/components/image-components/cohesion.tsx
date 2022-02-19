@@ -6,7 +6,7 @@ const CohesionImage:FunctionComponent = () => (
   <StaticQuery
     query={graphql`
       query CohesionPhotoQuery {
-        allImageSharp(filter: {fluid: {originalName: {eq: "cohesion.png"}}}) {
+        allImageSharp(filter: {gatsbyImageData: {eq: "cohesion.png"}}) {
           edges {
             node {
               gatsbyImageData(

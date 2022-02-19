@@ -14,6 +14,7 @@ const Header:FunctionComponent = () => {
           gatsbyImageData(
             width: 40
             placeholder: BLURRED
+            layout: CONSTRAINED
             formats: [AUTO, WEBP, AVIF]
           )
         }
