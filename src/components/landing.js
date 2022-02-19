@@ -8,7 +8,7 @@ const Landing = () => {
         <a href="#about" class="anchor">
           <div>
             <h1 className="intro">James Chuang</h1>
-            <p className="subtitle">Front End Developer | Seattle, Washington</p>
+            <p className="subtitle">Senior Software Engineer | Seattle, Washington</p>
           </div>
         </a>
       </div>

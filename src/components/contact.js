@@ -10,7 +10,7 @@ const Contact = () => {
       <div className="contact-layout">
         <div className="contact-narrative">
           <h2>Contact Me</h2>
-          <p>I am always interested in hearing about new ideas and opportunities! Feel free to contact me through the various means on the right. You can also download my resume in PDF format with the button below.</p>
+          <p>I am always interested in hearing about new ideas and opportunities. Feel free to contact me through the various means on the right.</p>
         </div>
         <div className="contact-icons">
           <a 

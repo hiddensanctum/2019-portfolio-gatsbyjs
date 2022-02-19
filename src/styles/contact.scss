@@ -18,11 +18,13 @@
     width: 1000px;
     max-width: 100%;
     .contact-narrative {
+      width: 60%;
       padding: 10px;
     }
     .contact-icons {
       display: flex;
       justify-content: center;
+      width: 40%;
       align-items: center;
       .email-icon {
         color: #669c41;
@@ -40,8 +42,8 @@
         box-shadow: none;
       }
       svg {
-        font-size: 90px;
-        padding: 15px;
+        font-size: 80px;
+        padding: $universal-padding * 2;
       }
     }
   }
@@ -60,8 +62,14 @@
       width: calc(100% - #{$universal-padding * 4});
       top: 0;
       left: 0;
+      .contact-narrative {
+        width: 100%;
+        padding: 0px;
+      }
       .contact-icons {
         display: block;
+        width: 100%;
+        text-align: center;
         svg {
           padding: $universal-padding;
         }
