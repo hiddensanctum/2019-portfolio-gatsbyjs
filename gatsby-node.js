@@ -1,12 +1,10 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
-const createPaginatedPages = require('gatsby-paginate')
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
-  const tagTemplate = path.resolve("src/templates/tags.js")
   const result = await graphql(
     `
       {
@@ -59,13 +57,6 @@ exports.createPages = async ({ graphql, actions }) => {
     throw result.errors
   }
 
-  // createPaginatedPages({
-  //   edges: result.data.postsRemark.edges,
-  //   createPage: createPage,
-  //   pageTemplate: 'src/templates/index.js',
-  //   pageLength: 6
-  // })
-
   // Create blog posts pages.
   const posts = result.data.postsRemark.edges
 
@@ -83,19 +74,6 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
-  
-  // Create tag pages
-  // const tags = result.data.tagsGroup.group
-
-  // tags.forEach(tag => {
-  //   createPage({
-  //     path: `/${tag.fieldValue}/`,
-  //     component: tagTemplate,
-  //     context: {
-  //       tag: tag.fieldValue,
-  //     },
-  //   })
-  // })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
