@@ -8,7 +8,7 @@ const Header:FunctionComponent = () => {
   const data = useStaticQuery(graphql`
     query LogoQuery {
       __typename
-      logo: file(absolutePath: {regex: "/logo.png/"}) {
+      logo: file(absolutePath: {regex: "images/logo.png/"}) {
         id
         childImageSharp {
           gatsbyImageData(

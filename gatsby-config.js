@@ -25,7 +25,7 @@ module.exports = {
         background_color: '#ffffff',
         theme_color: '#efb697',
         display: 'minimal-ui',
-        icon: './content/assets/logo.png',
+        icon: './content/assets/images/logo.png',
       },
     },
     'gatsby-plugin-sass',
