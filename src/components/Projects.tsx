@@ -44,7 +44,7 @@ const Projects:FunctionComponent = () => (
               <CohesionImage />
               <h3>European Structural and Investment Funds</h3>
             </a>
-            <p>The ESIF app is a React application that showcases how the EU is directing its investment funds through Europe. The app heavily relies on D3.js to create visualizations and is heavily used in the EU. Recently the application won the <a href='http://ec.europa.eu/regional_policy/en/newsroom/news/2017/03/30-03-2017-esi-funds-open-data-platform-receives-the-award-for-excellence-in-open-administration'>Excellence in Open Administration</a> in 2017 by the European Ombudsman</p>
+            <p>The ESIF app is a React application that showcases how the EU is directing its investment funds through Europe. The app heavily relies on D3.js to create visualizations and is heavily used in the EU. Recently the application won the <a href='https://ec.europa.eu/regional_policy/en/newsroom/news/2017/03/30-03-2017-esi-funds-open-data-platform-receives-the-award-for-excellence-in-open-administration'>Excellence in Open Administration</a> in 2017 by the European Ombudsman</p>
             <div className='project-technologies'>
               <ReactIcon/>
               <D3Icon/>
