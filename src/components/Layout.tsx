@@ -23,7 +23,6 @@ const Layout:FunctionComponent<Props> = ({ children }) => {
   return (
     <div className='layout'>
       <Helmet>
-        <link href='https://fonts.googleapis.com/css2?family=Cardo&family=Josefin+Sans:wght@100;400&display=swap' rel='stylesheet'/>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
       </Helmet>
       <Header />
