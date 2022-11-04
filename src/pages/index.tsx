@@ -1,19 +1,19 @@
 import React, { FunctionComponent } from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import About from '../components/about';
-import Contact from '../components/contact';
-import Experience from '../components/experience';
-import Landing from '../components/landing';
-import Projects from '../components/projects';
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
+import About from '../components/About';
+import Contact from '../components/Contact';
+import Experience from '../components/Experience';
+import Landing from '../components/Landing';
+import Projects from '../components/Projects';
 import '../styles/layout.scss';
 
 const Index:FunctionComponent = () => {
 
   return (
     <Layout>
-      <SEO title='Welcome' />
+      <SEO title='Hi' />
       <Landing />
       <About />
       <Experience />

@@ -13,9 +13,13 @@
     }
     .projects-list {
       display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
     .project-card {
-      padding-right: $universal-margin;
+      width: calc(50% - #{$universal-margin});
+      padding-right: $universal-padding;
+      margin-bottom: $universal-margin * 2;
       &:last-child {
         padding-right: 0;
       }
@@ -36,6 +40,9 @@
         max-width: 50px;
         fill: $jlchuang-accent-color;
         padding: $universal-padding;
+        path, circle {
+          fill: $jlchuang-accent-color;
+        }
       }
     }
   }
@@ -51,6 +58,7 @@
         flex-direction: column;
       }
       .project-card {
+        width: 100%;
         padding-right: 0;
       }
     }

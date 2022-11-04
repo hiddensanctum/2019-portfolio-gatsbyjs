@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useState } from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import NavBar from './navbar';
+import NavBar from './Navbar';
 import '../styles/header.scss';
 
 const Header:FunctionComponent = () => {
@@ -30,7 +30,7 @@ const Header:FunctionComponent = () => {
       <div className='header-container'>
         <Link to={'/'}>
           <GatsbyImage
-            image={image}
+            image={image!}
             alt={'jlchuang logo'}
             className='jlchuang-logo'
           />

@@ -11,7 +11,11 @@ const Landing:FunctionComponent = () => (
       query LandingBannerQuery {
         file(relativePath: { eq: "images/landing-background.jpg" }) {
           childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
           }
         }
       }

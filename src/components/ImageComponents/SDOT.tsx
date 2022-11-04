@@ -2,13 +2,17 @@ import React, { FunctionComponent } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-const CohesionImage:FunctionComponent = () => (
+const SdotImage:FunctionComponent = () => (
   <StaticQuery
     query={graphql`
-      query CohesionPhotoQuery {
-        file(relativePath: { eq: "images/cohesion.png" }) {
+      query SDOTPhotoQuery {
+        file(relativePath: { eq: "images/sdot.png" }) {
           childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
           }
         }
       }
@@ -18,9 +22,9 @@ const CohesionImage:FunctionComponent = () => (
       return (
         <div>
           <GatsbyImage
-            image={image}
+            image={image!}
             className='project-image'
-            alt='European Structural and Investment Fund Website Screenshot'
+            alt='Seattle Department of Transportation Website Screenshot'
           />
         </div>
       );
@@ -28,4 +32,4 @@ const CohesionImage:FunctionComponent = () => (
   />
 );
 
-export default CohesionImage;
+export default SdotImage;

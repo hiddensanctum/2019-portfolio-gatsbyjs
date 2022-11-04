@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
-import Skills from './skills';
+import Skills from './Skills';
 import '../styles/about.scss';
 
 const About:FunctionComponent = () => (
