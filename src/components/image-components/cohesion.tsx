@@ -6,26 +6,20 @@ const CohesionImage:FunctionComponent = () => (
   <StaticQuery
     query={graphql`
       query CohesionPhotoQuery {
-        allImageSharp(filter: {fluid: {originalName: {eq: "cohesion.png"}}}) {
-          edges {
-            node {
-              gatsbyImageData(
-                width: 600
-                placeholder: BLURRED
-                formats: [AUTO, WEBP, AVIF]
-              )
-            }
+        file(relativePath: { eq: "images/cohesion.png" }) {
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
       }
     `}
     render={(data) => {
-      const image = getImage(data.allImageSharp.edges[0].node)
+      const image = getImage(data.file);
       return (
         <div>
-          <GatsbyImage 
-            image={image} 
-            className='project-image' 
+          <GatsbyImage
+            image={image}
+            className='project-image'
             alt='European Structural and Investment Fund Website Screenshot'
           />
         </div>

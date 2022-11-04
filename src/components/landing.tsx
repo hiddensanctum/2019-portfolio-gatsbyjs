@@ -8,21 +8,16 @@ import '../styles/landing.scss';
 const Landing:FunctionComponent = () => (
   <StaticQuery
     query={graphql`
-      query {
-        desktop: file(relativePath: { eq: "landing-background.jpg" }) {
+      query LandingBannerQuery {
+        file(relativePath: { eq: "images/landing-background.jpg" }) {
           childImageSharp {
-            gatsbyImageData(
-              width: 2048
-              quality: 85
-              layout: FULL_WIDTH
-              formats: [AUTO, WEBP, AVIF]
-            )
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
       }
     `}
     render={data => {
-      const image = getImage(data.desktop);
+      const image = getImage(data.file);
       const bgImage = convertToBgImage(image);
 
       return (
@@ -30,7 +25,7 @@ const Landing:FunctionComponent = () => (
           Tag="section"
           className='landing-section'
           {...bgImage}
-        > 
+        >
           <div className='landing-layout'>
             <a href='#about' className='anchor'>
               <div>

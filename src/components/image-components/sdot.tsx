@@ -5,26 +5,20 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 const SdotImage:FunctionComponent = () => (
   <StaticQuery
     query={graphql`
-      query SdotPhotoQuery {
-        allImageSharp(filter: {fluid: {originalName: {eq: "SDOT.png"}}}) {
-          edges {
-            node {
-              gatsbyImageData(
-                width: 600
-                placeholder: BLURRED
-                formats: [AUTO, WEBP, AVIF]
-              )
-            }
+      query SDOTPhotoQuery {
+        file(relativePath: { eq: "images/sdot.png" }) {
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
       }
     `}
     render={(data) => {
-      const image = getImage(data.allImageSharp.edges[0].node);
+      const image = getImage(data.file);
       return (
         <div>
-          <GatsbyImage 
-            image={image} 
+          <GatsbyImage
+            image={image}
             className='project-image'
             alt='Seattle Department of Transportation Website Screenshot'
           />
