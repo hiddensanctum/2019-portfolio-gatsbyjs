@@ -7,6 +7,7 @@ import Contact from '../components/Contact';
 import Experience from '../components/Experience';
 import Landing from '../components/Landing';
 import Projects from '../components/Projects';
+import Skills from '../components/Skills';
 import '../styles/layout.scss';
 
 const Index:FunctionComponent = () => {
@@ -14,11 +15,12 @@ const Index:FunctionComponent = () => {
   return (
     <Layout>
       <SEO title='Hi' />
-      <Landing />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
+      <Landing/>
+      <About/>
+      <Skills/>
+      <Experience/>
+      <Projects/>
+      <Contact/>
     </Layout>
   );
 };

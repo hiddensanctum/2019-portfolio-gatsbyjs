@@ -18,9 +18,9 @@ import {
 import '../styles/projects.scss';
 
 const Projects:FunctionComponent = () => (
-  <div className='projects-viewport' id='projects'>
-    <div className='projects-layout'>
-      <div className='projects-section' data-aos='fade-down'>
+  <div className='viewport' id='projects'>
+    <div className='layout'>
+      <div className='section' data-aos='fade-down'>
         <h2><FontAwesomeIcon icon={faDesktop} /> Projects</h2>
         <div className='projects-list'>
         <div className='project-card'>

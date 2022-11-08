@@ -1,13 +1,7 @@
 @import 'variables.scss';
 
-.projects-viewport {
-  @include flex-center;
-  background: $jlchuang-dark-color;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  .projects-layout {
-    @include section-box;
+#projects {
+  .layout {
     .projects-section {
       width: 100%;
     }
@@ -17,9 +11,9 @@
       flex-wrap: wrap;
     }
     .project-card {
-      width: calc(50% - #{$universal-margin});
-      padding-right: $universal-padding;
-      margin-bottom: $universal-margin * 2;
+      width: calc(50% - var(--universal-margin));
+      padding-right: var(--universal-padding);
+      margin-bottom: calc(var(--universal-margin) * 2);
       &:last-child {
         padding-right: 0;
       }
@@ -29,7 +23,7 @@
             opacity: 1;
           }
           h3 {
-            color: $jlchuang-pale-color;
+            color: var(--jlchuang-pale-color);
           }
         }
       }
@@ -38,10 +32,10 @@
       display: flex;
       svg {
         max-width: 50px;
-        fill: $jlchuang-accent-color;
-        padding: $universal-padding;
+        fill: var(--jlchuang-accent-color);
+        padding: var(--universal-padding);
         path, circle {
-          fill: $jlchuang-accent-color;
+          fill: var(--jlchuang-accent-color);
         }
       }
     }
@@ -52,7 +46,7 @@
     opacity: .8;
   }
   @media only screen and (max-device-width : 768px) {
-    .projects-layout {
+    .layout {
       @include mobile-layout;
       .projects-list {
         flex-direction: column;

@@ -4,8 +4,8 @@ import { faSuitcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import '../styles/experience.scss';
 
 const Experience:FunctionComponent = () => (
-  <div className='experience-section' id='experience'>
-    <div className='experience-layout'>
+  <div className='viewport' id='experience'>
+    <div className='layout'>
       <div className='experience' data-aos='fade-down'>
         <h2>
           <FontAwesomeIcon icon={faSuitcase} /> Experience

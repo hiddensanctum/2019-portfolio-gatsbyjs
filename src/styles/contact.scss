@@ -1,13 +1,7 @@
 @import 'variables.scss';
 
-.contact-section {
-  @include flex-center;
-  background: $jlchuang-dark-alt-color;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  .contact-layout {
-    @include section-box;
+#contact {
+  .layout {
     .contact-narrative {
       display: flex;
       flex-direction: column;
@@ -26,19 +20,19 @@
       .medium-link {
         text-decoration: none;
         box-shadow: none;
-        color: $jlchuang-accent-color;
+        color: var(--jlchuang-accent-color);
         &:hover, &:focus {
-          color: $jlchuang-pale-color;
+          color: var(--jlchuang-pale-color);
         }
       }
       svg {
         font-size: 50px;
-        padding: $universal-padding;
+        padding: var(--universal-padding);
       }
     }
   }
   @media only screen and (max-device-width : 768px) {
-    .contact-layout {
+    .layout {
       @include mobile-layout;
       .contact-narrative {
         padding-right: 0px;
@@ -48,7 +42,7 @@
         width: 100%;
         svg {
           font-size: 40px;
-          padding: $universal-padding;
+          padding: var(--universal-padding);
         }
       }
     }

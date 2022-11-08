@@ -1,11 +1,7 @@
 @import 'variables.scss';
 
-.experience-section {
-  @include flex-center;
-  background: $jlchuang-dark-alt-color;
-  min-height: 100vh;
-  .experience-layout {
-    @include section-box;
+#experience {
+  .layout {
     .experience, .education {
       h1, h2 {
         margin-top: 10px;
@@ -16,13 +12,7 @@
           margin-top: 10px;
           margin-bottom: 10px;
         }
-        h3 {
-          color: $jlchuang-accent-dark-color;
-        }
-        h4 {
-          color: $jlchuang-accent-pale-color;
-        }
-      }  
+      }
     }
     .experience {
       padding-right: 20px;
@@ -34,7 +24,7 @@
     }
   }
   @media only screen and (max-device-width : 768px) {
-    .experience-layout {
+    .layout {
       @include mobile-layout;
       .experience {
         width: 100%;
@@ -42,7 +32,7 @@
       }
       .education {
         width: 100%;
-        margin-top: $universal-margin * 2;
+        margin-top: calc(var(--universal-margin) * 2);
         padding-left: 0px;
       }
     }

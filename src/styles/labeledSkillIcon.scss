@@ -1,0 +1,25 @@
+.labeledSkillIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > svg {
+    width: 60px;
+    path, circle {
+      fill: var(--jlchuang-accent-color);
+    }
+  }
+  .level-stars {
+    display: flex;
+    justify-content: space-evenly;
+    margin: var(--universal-padding) 0;
+    gap: calc(var(--universal-padding) / 2);
+    svg, path, circle {
+      height: 10px
+    }
+    .colored {
+      path {
+        fill: var(--jlchuang-accent-dark-color);
+      }
+    }
+  }
+}

@@ -1,9 +1,21 @@
 @import 'variables.scss';
 
-.skills {
-  svg {
-    height: 80px;
-    padding: 20px;
-    fill: $jlchuang-accent-color;
+#skills {
+  .skill-block {
+    display: flex;
+  }
+  .framework-block {
+    padding-right: 20px;
+    width: 60%;
+  }
+  .language-block {
+    padding-left: 20px;
+    width: 40%;
+  }
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--universal-margin);
+    row-gap: var(--universal-margin);
   }
 }

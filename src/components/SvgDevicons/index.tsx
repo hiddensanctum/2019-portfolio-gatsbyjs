@@ -7,3 +7,5 @@ export * from './HTML5Icon';
 export * from './JavascriptIcon';
 export * from './ReactIcon';
 export * from './TypeScriptIcon';
+export * from './RubyIcon';
+export * from './RailsIcon';

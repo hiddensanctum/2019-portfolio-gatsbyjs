@@ -30,11 +30,11 @@
       }
     }
     .intro {
-      font-family: 'Josefin Sans', sans-serif;
+      font-family: var(--jlchuang-josefin-sans-font-family);
     }
     .subtitle {
       margin: 10px;
-      color: $jlchuang-accent-color;
+      color: var(--jlchuang-accent-color);
     }
   }
   @media only screen and (max-device-width : 768px) {

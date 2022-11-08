@@ -1,13 +1,13 @@
 import React, { FunctionComponent } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
-import Skills from './Skills';
+import Interests from './Interests';
 import '../styles/about.scss';
 
 const About:FunctionComponent = () => (
-  <div className='about-viewport' id='about'>
-    <div className='about-layout'>
-      <div className='about-section' data-aos='fade-down'>
+  <div className='viewport' id='about'>
+    <div className='layout'>
+      <div className='section' data-aos='fade-down'>
         <div className='profile-section'>
           <FontAwesomeIcon icon={faUserCircle} className='profile-icon' />
         </div>
@@ -17,7 +17,7 @@ const About:FunctionComponent = () => (
           I predominately focus on Front End Stacks tackling issues of Accessibility, Design Systems, and User Experiences.</p>
       </div>
       <div className='skill-section' data-aos='fade-down'>
-        <Skills />
+        <Interests/>
       </div>
     </div>
   </div>

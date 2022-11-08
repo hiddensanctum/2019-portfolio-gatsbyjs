@@ -22,18 +22,20 @@ const Navbar:FunctionComponent<Props> = ({ onChange }) => {
     <ul className={device}>
       <li><Link to={'/'} onClick={() => toggleMobileNav(!MobileNav)}>Home</Link></li>
       <li><Link to={'#about'} onClick={() => toggleMobileNav(!MobileNav)}>About</Link></li>
+      <li><Link to={'#skills'} onClick={() => toggleMobileNav(!MobileNav)}>Skills</Link></li>
       <li><Link to={'#experience'} onClick={() => toggleMobileNav(!MobileNav)}>Experience</Link></li>
       <li><Link to={'#projects'} onClick={() => toggleMobileNav(!MobileNav)}>Projects</Link></li>
-      <li><a href='https://medium.com/@jlchuang' onClick={() => toggleMobileNav(!MobileNav)}><FontAwesomeIcon icon={faMedium} /> Journal</a></li>
+      <li><a href='https://blog.jlchuang.com' onClick={() => toggleMobileNav(!MobileNav)}><FontAwesomeIcon icon={faMedium} /> Blog</a></li>
       <li><Link to={'#contact'} onClick={() => toggleMobileNav(!MobileNav)}>Contact</Link></li>
     </ul>
   ) : (
     <ul className={device}>
       <li><Link to={'/'}>Home</Link></li>
       <li><Link to={'#about'}>About</Link></li>
+      <li><Link to={'#skills'}>Skills</Link></li>
       <li><Link to={'#experience'}>Experience</Link></li>
       <li><Link to={'#projects'}>Projects</Link></li>
-      <li><a href='https://medium.com/@jlchuang' target='_blank'><FontAwesomeIcon icon={faMedium} className='medium' /> Journal</a></li>
+      <li><a href='https://blog.jlchuang.com' target='_blank'><FontAwesomeIcon icon={faMedium} className='medium' /> Blog</a></li>
       <li><Link to={'#contact'}>Contact</Link></li>
     </ul>
   ));

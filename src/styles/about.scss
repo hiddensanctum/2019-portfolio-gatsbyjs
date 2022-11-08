@@ -1,13 +1,7 @@
 @import 'variables.scss';
 
-.about-viewport {
-  @include flex-center;
-  background: $jlchuang-dark-color;
-  min-height: 100vh;
-  .about-layout {
-    @include section-box;
-  }
-  .about-section {
+#about {
+  .section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,7 +39,7 @@
       svg {
         height: auto;
         max-width: 80px;
-        padding: $universal-padding;
+        padding: var(--universal-padding);
       }
     }
   }
