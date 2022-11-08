@@ -34,7 +34,7 @@ header.header {
   }
   @media only screen and (max-device-width : 768px) {
     &.expanded {
-      background: rgba(var(--jlchuang-dark-color), 0.95);
+      background: rgba(var(--jlchuang-dark-color-rgb), 0.95);
     }
   }
 }

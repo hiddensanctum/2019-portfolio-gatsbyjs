@@ -57,7 +57,7 @@ nav {
     .navbar-mobile {
       display: block;
       position: absolute;
-      background: rgba(var(--jlchuang-dark-color), 0.95);
+      background: rgba(var(--jlchuang-dark-color-rgb), 0.95);
       top: 0;
       left: 0;
       width: 100vw;
@@ -70,7 +70,7 @@ nav {
         a {
           display: block;
           color: var(--jlchuang-pale-color);
-          padding: var(--universal-padding) calc(var(--$universal-padding) * 2);
+          padding: var(--universal-padding) calc(var(--universal-padding) * 2);
           font-size: 18px;
           &:hover, &:active {
             box-shadow: none;

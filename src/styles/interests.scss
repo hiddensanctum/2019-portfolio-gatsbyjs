@@ -1,0 +1,19 @@
+@import 'variables.scss';
+
+.interest {
+  display: flex;
+  font-size: 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: calc(var(--universal-gap) * 1.2);
+  row-gap: calc(var(--universal-row-gap) * 2);
+  svg {
+    path {
+      fill: var(--jlchuang-accent-color);
+    }
+  }
+  @media only screen and (max-device-width : 768px) {
+    gap: var(--universal-gap);
+    row-gap: calc(var(--universal-row-gap) / 2);
+  }
+}

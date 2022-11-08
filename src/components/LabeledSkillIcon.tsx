@@ -7,7 +7,7 @@ import '../styles/labeledSkillIcon.scss'
 
 interface LabeledSkillIconProps {
   label: string;
-  level: 1 | 2 | 3;
+  level?: 1 | 2 | 3;
   icon: Element | JSX.Element;
 }
 
@@ -40,6 +40,8 @@ const renderSkillLevel = (skill: number) => {
         </>
       )
       break;
+    default:
+      break;
   }
 }
 
@@ -48,12 +50,14 @@ const LabeledSkillIcon = ({
   level,
   icon
 }: LabeledSkillIconProps) => (
-  <Tippy content={<span>{label}</span>}>
+  <Tippy content={<span>{label}</span>} placement='bottom'>
     <div className='labeledSkillIcon' >
       {icon}
-      <div className='level-stars'>
-        {renderSkillLevel(level)}
-      </div>
+      {level ? (
+        <div className='level-stars'>
+          {renderSkillLevel(level)}
+        </div>
+      ) : null}
     </div>
   </Tippy>
 );

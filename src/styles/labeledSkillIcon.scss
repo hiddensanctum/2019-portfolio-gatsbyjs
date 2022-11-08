@@ -6,13 +6,17 @@
     width: 60px;
     path, circle {
       fill: var(--jlchuang-accent-color);
+      &#none {
+        fill: none;
+      }
     }
   }
   .level-stars {
     display: flex;
     justify-content: space-evenly;
     margin: var(--universal-padding) 0;
-    gap: calc(var(--universal-padding) / 2);
+    // gap: var(--universal-gap);
+    // row-gap: var(--universal-row-gap);
     svg, path, circle {
       height: 10px
     }
