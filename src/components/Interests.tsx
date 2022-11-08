@@ -38,7 +38,7 @@ const Interests:FunctionComponent = () => (
     <Tippy content={<span>I am an avid traveller ✈️</span>}>
       <FontAwesomeIcon icon={faPassport}/>
     </Tippy>
-    <Tippy content={<span>My typical playlist includes Kpop, Cpop, Jpop, Jazz, and Lo Fi</span>}>
+    <Tippy content={<span>My typical playlist includes Kpop, Cpop, Jpop, Jazz, and Lo Fi 🎵</span>}>
       <FontAwesomeIcon icon={faMusic}/>
     </Tippy>
     <Tippy content={<span>I enjoy Korean dramas, Chinese dramas, and Sci Fi shows 🍿</span>}>
