@@ -1,23 +1,28 @@
-// Colors
-$jlchuang-pale-color:         #FFFFFF;
-$jlchuang-pale-alt-color:     #EFEFEF;
-$jlchuang-dark-color:         #0D0D0D;
-$jlchuang-dark-alt-color:     #222226;
-$jlchuang-accent-color:       #efb697;
-$jlchuang-accent-pale-color:  lighten( $jlchuang-accent-color, 10% );
-$jlchuang-accent-dark-color:  darken( $jlchuang-accent-color, 10% );
-
-// Layout
-$universal-padding:           10px;
-$universal-margin:            20px;
-
-// Mobile
-$universal-mobile-padding:    20px;
-
-// TODO: update these to css variables
-
 :root {
+  /* Heights */
   --header-height: 64px;
+
+  /* Colors */
+  --jlchuang-pale-color:              #FFFFFF;
+  --jlchuang-pale-alt-color:          #EFEFEF;
+  --jlchuang-dark-color:              #0D0D0D;
+  --jlchuang-dark-alt-color:          #222226;
+  --jlchuang-accent-color:            #efb697;
+  --jlchuang-accent-pale-color:       #f6d5c3;
+  --jlchuang-accent-dark-color:       #e8976b;
+
+  /* Color rgb */
+  --jlchuang-dark-color-rgb:            13, 13, 13;
+
+  /* Layouts */
+  --universal-padding:                  10px;
+  --universal-margin:                   20px;
+  --universal-gap:                      30px;
+  --universal-row-gap:                  20px;
+
+  /* Fonts */
+  --jlchuang-josefin-sans-font-family: 'Josefin Sans', sans-serif;
+  --jlchuang-cardo-font-family:        'Cardo', sans-serif;
 }
 
 @mixin flex-center {

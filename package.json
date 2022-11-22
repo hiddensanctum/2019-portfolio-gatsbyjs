@@ -2,7 +2,7 @@
   "name": "jlchuang.com",
   "private": true,
   "description": "My Personal Portfolio Site",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "James Chuang",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
@@ -13,6 +13,7 @@
     "@fortawesome/free-regular-svg-icons": "~6.2.0",
     "@fortawesome/free-solid-svg-icons": "~6.2.0",
     "@fortawesome/react-fontawesome": "~0.2.0",
+    "@tippyjs/react": "~4.2.6",
     "@types/react-helmet": "~6.1.5",
     "devicon": "~2.15.1",
     "gatsby": "~4.24.7",

@@ -4,28 +4,58 @@
 html {
   scroll-behavior: smooth;
   body {
-    color: $jlchuang-pale-color;
-    background: $jlchuang-dark-alt-color;
+    color: var(--jlchuang-pale-color);
+    background: var(--jlchuang-dark-alt-color);
     height: 100%;
     width: 100%;
     margin: 0px;
     font-size: 16px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--jlchuang-josefin-sans-font-family);
     letter-spacing: 0.5px;
     line-height: 1.5;
     h1, h2, h3, h4, h5 {
-      color: $jlchuang-accent-color;
-      margin-top: $universal-padding;
-      margin-bottom: $universal-padding * 2;
-      font-family: 'Cardo', sans-serif;
+      margin-top: var(--universal-padding);
+      margin-bottom: var(--universal-padding);
+      font-family: var(--jlchuang-cardo-font-family);
+    }
+    h1, h2 {
+      color: var(--jlchuang-accent-color);
+    }
+    h3 {
+      color: var(--jlchuang-accent-dark-color);
+    }
+    h4 {
+      color: var(--jlchuang-accent-pale-color);
     }
     a {
-      color: $jlchuang-accent-color;
+      color: var(--jlchuang-accent-color);
       box-shadow: none;
       text-decoration: none;
       &:hover, &:focus {
-        color: $jlchuang-pale-color;
+        color: var(--jlchuang-pale-color);
       }
+    }
+  }
+}
+
+.viewport {
+  @include flex-center;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  &:nth-child(even) {
+    background: var(--jlchuang-dark-color);
+  }
+  &:nth-child(odd) {
+    background: var(--jlchuang-dark-alt-color);
+  }
+  .layout {
+    @include section-box;
+    .section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
     }
   }
 }

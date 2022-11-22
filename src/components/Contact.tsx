@@ -5,8 +5,8 @@ import { faLinkedinIn, faGithubAlt, faMedium } from '@fortawesome/free-brands-sv
 import '../styles/contact.scss';
 
 const Contact:FunctionComponent = () => (
-  <div className='contact-section' id='contact'>
-    <div className='contact-layout'>
+  <div className='viewport' id='contact'>
+    <div className='layout'>
       <div className='contact-narrative' data-aos='fade-down'>
         <h2>Contact Me</h2>
         <p>I am always interested in hearing about new ideas and opportunities.

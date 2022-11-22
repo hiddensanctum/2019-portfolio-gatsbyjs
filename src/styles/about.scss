@@ -1,23 +1,27 @@
 @import 'variables.scss';
 
-.about-viewport {
-  @include flex-center;
-  background: $jlchuang-dark-color;
-  min-height: 100vh;
-  .about-layout {
-    @include section-box;
-  }
-  .about-section {
+#about {
+  .section {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 10px;
-    width: 60%;
+    .about-block {
+      display: flex;
+    }
     .profile-section {
+      width: 60%;
+      padding-right: 10px;
       text-align: center;
       .profile-icon {
         font-size: 300px;
       }
+      h2, h3, p {
+        text-align: left;
+      }
+    }
+    .interest-section {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
   .skill-section {
@@ -29,8 +33,17 @@
     width: 40%;
   }
   @media only screen and (max-device-width : 768px) {
-    .about-layout {
+    .layout {
       @include mobile-layout;
+      .section,
+      .profile-section,
+      .interest-section {
+        width: 100%;
+        padding: 0;
+      }
+      .about-block {
+        flex-direction: column;
+      }
     }
     .about-section {
       width: 100%;
@@ -39,13 +52,12 @@
         font-size: 200px;
       }
     }
-    .skill-section {
-      width: 100%;
+    .interest-section {
       padding-left: 0;
       svg {
         height: auto;
-        max-width: 80px;
-        padding: $universal-padding;
+        max-width: 60px;
+        padding: var(--universal-padding);
       }
     }
   }
