@@ -2,7 +2,7 @@
   "name": "jlchuang.com",
   "private": true,
   "description": "My Personal Portfolio Site",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "author": "James Chuang",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
@@ -16,19 +16,17 @@
     "@tippyjs/react": "~4.2.6",
     "@types/react-helmet": "~6.1.5",
     "devicon": "~2.15.1",
-    "gatsby": "~4.24.7",
-    "gatsby-background-image": "~1.6.0",
-    "gatsby-plugin-gatsby-cloud": "~4.24.1",
-    "gatsby-plugin-image": "~2.24.0",
-    "gatsby-plugin-manifest": "~4.24.0",
-    "gatsby-plugin-offline": "~5.24.0",
-    "gatsby-plugin-sass": "~5.24.0",
-    "gatsby-plugin-sharp": "~4.24.0",
-    "gatsby-source-filesystem": "~4.24.0",
-    "gatsby-transformer-sharp": "~4.24.0",
-    "gbimage-bridge": "~0.2.2",
+    "gatsby": "~5.1.0",
+    "gatsby-plugin-gatsby-cloud": "~5.1.0",
+    "gatsby-plugin-image": "~3.1.0",
+    "gatsby-plugin-manifest": "~5.1.0",
+    "gatsby-plugin-offline": "~6.1.0",
+    "gatsby-plugin-sass": "~6.1.0",
+    "gatsby-plugin-sharp": "~5.1.0",
+    "gatsby-source-filesystem": "~5.1.0",
+    "gatsby-transformer-sharp": "~5.1.0",
     "lodash": "~4.17.21",
-    "node-sass": "~7.0.3",
+    "node-sass": "~8.0.0",
     "prismjs": "~1.29.0",
     "prop-types": "~15.8.1",
     "react": "~18.2.0",
@@ -37,11 +35,11 @@
     "react-script-hook": "~1.7.2"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "~8.26.0",
+    "babel-eslint": "~10.1.0",
+    "eslint": "~8.28.0",
     "eslint-config-airbnb": "~19.0.4",
     "eslint-plugin-react": "~7.31.10",
-    "prettier": "~2.7.1"
+    "prettier": "~2.8.0"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
