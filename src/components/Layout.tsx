@@ -17,6 +17,7 @@ declare global {
 const Layout:FunctionComponent<Props> = ({ children }) => {
   useScript({
     src: 'https://unpkg.com/aos@2.3.1/dist/aos.js',
+    checkForExisting: true,
     onload: () => window.AOS.init(),
   });
 

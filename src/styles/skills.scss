@@ -14,7 +14,7 @@
   }
   .items {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: var(--universal-gap);
     row-gap: var(--universal-row-gap);

@@ -1,8 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { graphql, StaticQuery } from 'gatsby';
-import BackgroundImage from 'gatsby-background-image';
-import { getImage } from 'gatsby-plugin-image';
-import { convertToBgImage } from 'gbimage-bridge';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import '../styles/landing.scss';
 
 const Landing:FunctionComponent = () => (
@@ -13,8 +11,6 @@ const Landing:FunctionComponent = () => (
           childImageSharp {
             gatsbyImageData(
               layout: FULL_WIDTH
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
             )
           }
         }
@@ -22,14 +18,14 @@ const Landing:FunctionComponent = () => (
     `}
     render={data => {
       const image = getImage(data.file);
-      const bgImage = convertToBgImage(image);
 
       return (
-        <BackgroundImage
-          Tag="section"
-          className='landing-section'
-          {...bgImage}
-        >
+        <>
+          <GatsbyImage
+            image={image!}
+            alt='background image'
+            className='landing-section'
+          />
           <div className='landing-layout'>
             <a href='#about' className='anchor'>
               <div>
@@ -38,7 +34,7 @@ const Landing:FunctionComponent = () => (
               </div>
             </a>
           </div>
-        </BackgroundImage>
+        </>
       )
     }}
   />

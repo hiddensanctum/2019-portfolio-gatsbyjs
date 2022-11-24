@@ -7,7 +7,18 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaults: {
+          breakpoints: [200, 400, 800, 1200, 1600],
+          formats: ['auto', 'webp', 'jpg'],
+          quality: 50,
+          placeholder: 'blurred',
+          backgroundColor: 'transparent',
+        },
+      },
+    },
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
