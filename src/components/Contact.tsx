@@ -9,8 +9,7 @@ const Contact:FunctionComponent = () => (
     <div className='layout'>
       <div className='contact-narrative' data-aos='fade-down'>
         <h2>Contact Me</h2>
-        <p>I am always interested in hearing about new ideas and opportunities.
-          Feel free to contact me through the various means on the right.</p>
+        <p>I'm always eager to discuss fresh ideas and opportunities. Please don't hesitate to reach out via the contact options to the right.</p>
       </div>
       <div className='contact-icons' data-aos='fade-down'>
         <a

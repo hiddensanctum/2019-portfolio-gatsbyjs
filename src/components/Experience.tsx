@@ -38,7 +38,7 @@ const Experience:FunctionComponent = () => (
           <span>Jan 2014 - Mar 2014</span>
           <h3>Socrata</h3>
           <h4>Consultant Web Developer</h4>
-          <p>Volunteered as a consultant web developer and developed an Ember application to track feral cat populations in Seattle. The Ember application was a tool to help volunteers perform data entry and track the feral cat population.</p>
+          <p>I served as a volunteer consultant web developer, creating an Ember application tailored for monitoring the feral cat populations in Seattle. This intuitive tool streamlined the data entry process for volunteers and provided efficient tracking of the city's feral cat demographics.</p>
         </div>
       </div>
       <div className='education' data-aos='fade-down'>
