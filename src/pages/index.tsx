@@ -14,7 +14,7 @@ const Index:FunctionComponent = () => {
 
   return (
     <Layout>
-      <SEO title='Hi' />
+      <SEO title='Hello' />
       <Landing/>
       <About/>
       <Skills/>
