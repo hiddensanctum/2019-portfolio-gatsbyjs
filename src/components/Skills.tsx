@@ -40,7 +40,7 @@ const Skills:FunctionComponent = () => (
         <div className='skill-block'>
           <div className='framework-block' data-aos='fade-down'>
             <h3>Frameworks & Tools</h3>
-            <p>My framework of choise is React.js but I'm used various frameworks and tools over the years (mouseover icons to see the name)</p>
+            <p>My framework of choice is React.js but I'm used various frameworks and tools over the years (mouseover icons to see the name)</p>
             <div className='items'>
               <LabeledSkillIcon icon={(<AngularIcon/>)} label='Angular'/>
               <LabeledSkillIcon icon={(<AwsIcon/>)} label='Amazon Web Services'/>
