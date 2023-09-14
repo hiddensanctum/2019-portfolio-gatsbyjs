@@ -12,7 +12,7 @@ const About:FunctionComponent = () => (
           <div className='profile-section' data-aos='fade-down'>
             <FontAwesomeIcon icon={faUserCircle} className='profile-icon' />
             <h2>About Me</h2>
-            <h3>I am a Software Team Lead in Seattle, Washington</h3>
+            <h3>I am a Lead Software Engineer in Seattle, Washington</h3>
             <p>Studied at Code Fellows RoR Track and UMCP Bachelors of Science in Psychology,
               I predominately focus on the <strong>Front-End Stack</strong> tackling issues of
               Accessibility, Design Systems, and User Experiences. Mouse over the icons to learn

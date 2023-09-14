@@ -11,29 +11,34 @@ const Experience:FunctionComponent = () => (
           <FontAwesomeIcon icon={faSuitcase} /> Experience
         </h2>
         <div className='experience-block'>
-          <span>Aug 2021 - Present</span>
+          <span>Aug 2023 - Present</span>
+          <h3>Tyler Technologies</h3>
+          <h4>Lead Software Engineer</h4>
+          <p>As a Technical Lead within the Data & Insight Division, I architect and draft comprehensive technical design documents that drive significant enhancements to our codebase. I spearheaded the strategic refactoring of frontend state management, ensuring optimal performance and maintainability. Collaborating cross-functionally, I liaise with security, design, and senior leadership teams to shape and innovate the technical product designs. Furthermore, I champion and lead investigations into the integration of AI tools within the division, fortifying the advanced capabilities of our system.</p>
+        </div>
+        <div className='experience-block'>
+          <span>Aug 2021 - Aug 2023</span>
           <h3>Tyler Technologies</h3>
           <h4>Software Team Lead</h4>
-          <p>50% of my time as a technical manager for 3 direct reports. The other 50% as a lead software engineer. My day to day involves planning out projects, creating <strong>technical design docs</strong>, implementing features, growing/mentoring teammates, and managing my direct reports.</p>
-          <p></p>
+          <p>As a dual-role professional, I dedicate 50% of my responsibilities to acting as a Technical Manager for three direct reports, and the remaining 50% to my role as a Senior Software Engineer. My daily responsibilities encompass strategizing project roadmaps, drafting comprehensive <strong>technical design documents</strong>, executing feature implementations, cultivating and mentoring my team members, and proficiently overseeing my direct reports.</p>
         </div>
         <div className='experience-block'>
           <span>May 2018 - Aug 2021</span>
           <h3>Tyler Technologies</h3>
           <h4>Senior Software Engineer</h4>
-          <p>Worked as a Senior Software Engineer at the Data Insights Division of Tyler Technologies. I develop Performance KPI software that enables data analysis for governments to make data-based decisions for their public policies.</p>
+          <p>As a Senior Software Engineer in the Data Insights Division of Tyler Technologies, I developed advanced Performance KPI software. This cutting-edge tool empowers governmental bodies with robust data analysis capabilities, facilitating data-driven decisions that enhance public policy formulation and implementation.</p>
         </div>
         <div className='experience-block'>
           <span>Apr 2014 - May 2018</span>
           <h3>Socrata</h3>
           <h4>Senior Front End Developer</h4>
-          <p>Scope out large data exploration and storytelling applications for the public sector. Provide mentorship for newer developers. Develop an all-inclusive technical project plan and execute on that project plan. Create the UI/UX design and worked with the program manager to develop roadmaps.</p>
+          <p>I create comprehensive data exploration and storytelling applications tailored for the public sector. Beyond technical development, I provide pivotal mentorship to emerging developers. I meticulously draft and implement holistic technical project plans. Additionally, I have hands-on involvement in shaping the UI/UX design and collaborate seamlessly with program managers to strategize development roadmaps.</p>
         </div>
         <div className='experience-block'>
           <span>Jan 2014 - Mar 2014</span>
           <h3>Socrata</h3>
           <h4>Consultant Web Developer</h4>
-          <p>Volunteered as a consultant web developer and developed an Ember application to track feral cat populations in Seattle. The Ember application was a tool to help volunteers perform data entry and track the feral cat population.</p>
+          <p>I served as a volunteer consultant web developer, creating an Ember application tailored for monitoring the feral cat populations in Seattle. This intuitive tool streamlined the data entry process for volunteers and provided efficient tracking of the city's feral cat demographics.</p>
         </div>
       </div>
       <div className='education' data-aos='fade-down'>
