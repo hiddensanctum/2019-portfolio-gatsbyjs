@@ -14,7 +14,7 @@ const Experience:FunctionComponent = () => (
           <span>Aug 2023 - Present</span>
           <h3>Tyler Technologies</h3>
           <h4>Lead Software Engineer</h4>
-          <p>As a Technical Lead within the Data & Insight Division, I architect and draft comprehensive technical design documents that drive significant enhancements to our codebase. I spearheaded the strategic refactoring of frontend state management, ensuring optimal performance and maintainability. Collaborating cross-functionally, I liaise with security, design, and senior leadership teams to shape and innovate product designs. Furthermore, I champion and lead investigations into the integration of AI applications, fortifying the advanced capabilities of our system.</p>
+          <p>As a Technical Lead within the Data & Insight Division, I architect and draft comprehensive technical design documents that drive significant enhancements to our codebase. I spearheaded the strategic refactoring of frontend state management, ensuring optimal performance and maintainability. Collaborating cross-functionally, I liaise with security, design, and senior leadership teams to shape and innovate the technical product designs. Furthermore, I champion and lead investigations into the integration of AI tools within the division, fortifying the advanced capabilities of our system.</p>
         </div>
         <div className='experience-block'>
           <span>Aug 2021 - Aug 2023</span>
@@ -32,7 +32,7 @@ const Experience:FunctionComponent = () => (
           <span>Apr 2014 - May 2018</span>
           <h3>Socrata</h3>
           <h4>Senior Front End Developer</h4>
-          <p>I architect comprehensive data exploration and storytelling applications tailored for the public sector. Beyond technical development, I provide pivotal mentorship to emerging developers. I meticulously draft and implement holistic technical project plans. Additionally, I have hands-on involvement in shaping the UI/UX design and collaborate seamlessly with program managers to strategize development roadmaps.</p>
+          <p>I create comprehensive data exploration and storytelling applications tailored for the public sector. Beyond technical development, I provide pivotal mentorship to emerging developers. I meticulously draft and implement holistic technical project plans. Additionally, I have hands-on involvement in shaping the UI/UX design and collaborate seamlessly with program managers to strategize development roadmaps.</p>
         </div>
         <div className='experience-block'>
           <span>Jan 2014 - Mar 2014</span>
