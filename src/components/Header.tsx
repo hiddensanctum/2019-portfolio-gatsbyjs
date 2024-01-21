@@ -12,7 +12,7 @@ const Header:FunctionComponent = () => {
         id
         childImageSharp {
           gatsbyImageData(
-            width: 40
+            width: 100
             placeholder: BLURRED
             layout: CONSTRAINED
             formats: [AUTO, WEBP, AVIF]

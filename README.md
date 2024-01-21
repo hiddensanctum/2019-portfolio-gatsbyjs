@@ -1,9 +1,3 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
   Jlchuang.com Portfolio Site
 </h1>
@@ -16,8 +10,8 @@
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd jlchuang.com-gatsby/
-    gatsby develop
+    cd jlchuang.com/
+    npm run develop
     ```
 
 1.  **Open the source code and start editing!**
