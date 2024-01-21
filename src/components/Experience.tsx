@@ -19,7 +19,7 @@ const Experience:FunctionComponent = () => (
         <div className='experience-block'>
           <span>Aug 2021 - Aug 2023</span>
           <h3>Tyler Technologies</h3>
-          <h4>Software Team Lead</h4>
+          <h4>Software Engineering Team Lead</h4>
           <p>As a dual-role professional, I dedicate 50% of my responsibilities to acting as a Technical Manager for three direct reports, and the remaining 50% to my role as a Senior Software Engineer. My daily responsibilities encompass strategizing project roadmaps, drafting comprehensive <strong>technical design documents</strong>, executing feature implementations, cultivating and mentoring my team members, and proficiently overseeing my direct reports.</p>
         </div>
         <div className='experience-block'>
@@ -33,12 +33,6 @@ const Experience:FunctionComponent = () => (
           <h3>Socrata</h3>
           <h4>Senior Front End Developer</h4>
           <p>I create comprehensive data exploration and storytelling applications tailored for the public sector. Beyond technical development, I provide pivotal mentorship to emerging developers. I meticulously draft and implement holistic technical project plans. Additionally, I have hands-on involvement in shaping the UI/UX design and collaborate seamlessly with program managers to strategize development roadmaps.</p>
-        </div>
-        <div className='experience-block'>
-          <span>Jan 2014 - Mar 2014</span>
-          <h3>Socrata</h3>
-          <h4>Consultant Web Developer</h4>
-          <p>I served as a volunteer consultant web developer, creating an Ember application tailored for monitoring the feral cat populations in Seattle. This intuitive tool streamlined the data entry process for volunteers and provided efficient tracking of the city's feral cat demographics.</p>
         </div>
       </div>
       <div className='education' data-aos='fade-down'>
